@@ -12,7 +12,7 @@
 
 -(NSString *)safe_trim;
 
--(BOOL)safe_isEmpty:(NSString *)str;
++(BOOL)safe_isEmpty:(NSString *)str;
 
 -(NSString *)safe_substringFromIndex:(NSUInteger)from;
 

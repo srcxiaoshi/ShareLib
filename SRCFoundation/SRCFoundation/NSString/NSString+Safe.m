@@ -19,7 +19,7 @@
 }
 
 //判空 传入的是nil NULL null 非nsstring "(null)" " \n" 如有新的形式，再补充
--(BOOL)safe_isEmpty:(NSString *)str
++(BOOL)safe_isEmpty:(NSString *)str
 {
     if(
        str

@@ -12,20 +12,33 @@
 
 @interface NSString (Easy)
 
-//比较大小
+//比较
 - (BOOL)easy_stringCompare:(NSString*)str;
 
-
-- (NSString *)easy_filterMark:(NSString *)str;
-
+//返回string占用空间
 - (CGSize)easy_sizeWithFont:(UIFont *)font;
+
 - (CGSize)easy_sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode;
+
 - (CGSize)easy_sizeWithFont:(UIFont *)font forWidth:(CGFloat)width lineBreakMode:(NSLineBreakMode)lineBreakMode;
+
 - (CGSize)easy_sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
 
-- (void)easy_drawInRect:(CGRect)rect withFont:(UIFont *)font;
-- (void)easy_drawInRect:(CGRect)rect withFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode;
-- (void)easy_drawInRect:(CGRect)rect withFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode alignment:(NSTextAlignment)alignment;
+//获取app名字
++(NSString *)easy_appName;
+//获取app版本
++(NSString *)easy_appVersion;
+//获取app build版本
++(NSString *)easy_appBuild;
+
+
+//获取 当前时间 格式为：2018/09/01 12:00:00
++(NSString *)easy_normalDate;
+
+
+//与html相关
+-(NSString *)easy_replaceHtmlSymbol;
+
 
 
 @end

@@ -7,15 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+
+typedef NS_ENUM(NSInteger, SRCNetworkReachabilityStatus) {
+    SRCNetworkReachabilityStatusUnknown          = -1,
+    SRCNetworkReachabilityStatusNotReachable     = 0,
+    SRCNetworkReachabilityStatusReachableViaWWAN = 1,
+    SRCNetworkReachabilityStatusReachableViaWiFi = 2,
+};
 
 
 
 @interface SRCNetworkWithAF : NSObject
 
-@property (assign,nonatomic) AFNetworkReachabilityStatus reachAbility;
+//使用这个属性，监控网络状态
+@property (assign,nonatomic) SRCNetworkReachabilityStatus reachAbility;
 
-//单例方法
+/**
+ * 单例方法
+ *
+ *
+ */
 +(SRCNetworkWithAF *)shareNetWorkingUtility;
 
 
@@ -96,6 +107,15 @@
  *  @param path 请求的完整url
  */
 +(void)cancelRequestWithType:(NSString *)type WithPath:(NSString *)path ;
+
+
+/**
+ *  获取网络状态
+ *
+ */
+ 
+ 
+ 
 
 
 @end

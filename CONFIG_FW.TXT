@@ -1,1 +1,1 @@
-/Users/xiaoshi/Desktop/SRCStock/Stock/ShareLib
+/Users/xiaoshi/Desktop/project/News/News/ShareLib

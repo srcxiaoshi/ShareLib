@@ -39,4 +39,4 @@ cp -R "${DEVICE_DIR}/" "${INSTALL_DIR}/"
 # Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.
 lipo -create "${DEVICE_DIR}/${FMK_NAME}" "${SIMULATOR_DIR}/${FMK_NAME}" -output "${INSTALL_DIR}/${FMK_NAME}"
 rm -r "${WRK_DIR}"
-#open "${INSTALL_DIR}"
+open "${INSTALL_DIR}"

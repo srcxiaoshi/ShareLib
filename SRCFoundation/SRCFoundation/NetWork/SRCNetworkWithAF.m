@@ -26,6 +26,7 @@
 @property (strong,nonatomic) AFHTTPSessionManager *manager;
 
 
+
 @end
 
 @implementation SRCNetworkWithAF
@@ -137,7 +138,7 @@ static SRCNetworkWithAF *instance = nil;//单例对象
     // 检测网络连接的单例,网络变化时的回调方法
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         
-        _weakSelf.reachAbility = status;
+        _weakSelf.reachAbility = (long)status;
         
     }];
     

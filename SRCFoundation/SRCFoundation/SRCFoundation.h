@@ -28,7 +28,8 @@ FOUNDATION_EXPORT const unsigned char SRCFoundationVersionString[];
 #import <SRCFoundation/NSString+Safe.h>
 #import <SRCFoundation/NSMutableString+Safe.h>
 #import <SRCFoundation/NSString+Easy.h>
-
+#import <SRCFoundation/NSString+Path.h>
+#import <SRCFoundation/NSString+URL.h>
 //File
 #import <SRCFoundation/NSFileManager+Safe.h>
 

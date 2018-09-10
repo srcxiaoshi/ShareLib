@@ -45,9 +45,12 @@ FOUNDATION_EXPORT const unsigned char SRCFoundationVersionString[];
 //NetWork
 #import <SRCFoundation/NSObject+Safe.h>
 
+//Model object
+#import <SRCFoundation/JSONModel.h>
+#import <SRCFoundation/BaseModel.h>
 
-
-
+//ERROR
+#import <SRCFoundation/ErrorHome.h>
 
 
 

@@ -70,7 +70,7 @@ static SRCNetworkWithAF *instance = nil;//单例对象
         [instance.manager.requestSerializer setValue:@"*/*" forHTTPHeaderField:@"Accept"];
         [instance.manager.requestSerializer setValue:@"keep-alive" forHTTPHeaderField:@"Connection"];
         //[instance.manager.requestSerializer setValue:@"XAUGVl9TGwYCXVFaBAk=" forHTTPHeaderField:@"X-NewRelic-ID"];
-        //[instance.manager.requestSerializer setValue:@"Stock/6.3.4 (iPhone; iOS 11.4.1; Scale/3.00)" forHTTPHeaderField:@"User-Agent"];
+        [instance.manager.requestSerializer setValue:@"News 6.8.8 rv:6.8.8.24 (iPhone; iOS 11.4.1; en_CN) Cronet" forHTTPHeaderField:@"User-Agent"];
         [instance.manager.requestSerializer setValue:@"zh-Hans-CN;q=1, en-CN;q=0.9" forHTTPHeaderField:@"Accept-Language"];
         //[instance.manager.requestSerializer setValue:AUTHENTICATION forHTTPHeaderField:@"Authorization"];
         [instance.manager.requestSerializer setValue:@"br, gzip, deflate" forHTTPHeaderField:@"Accept-Encoding"];
@@ -155,6 +155,9 @@ static SRCNetworkWithAF *instance = nil;//单例对象
         ERROR();
         return;
     }
+    //获取时间戳
+    long recordTime = (long)[[NSDate date] timeIntervalSince1970]*1000;
+    [[[[self shareNetWorkingUtility] manager] requestSerializer] setValue:@"tt-request-time" forHTTPHeaderField:[NSString stringWithFormat:@"%ld",recordTime]];
     [[[self shareNetWorkingUtility] manager] GET:path parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         if(downLoadProgress)
         {

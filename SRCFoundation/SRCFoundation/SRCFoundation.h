@@ -52,8 +52,9 @@ FOUNDATION_EXPORT const unsigned char SRCFoundationVersionString[];
 //ERROR
 #import <SRCFoundation/ErrorHome.h>
 
-
-
+//UIDevice
+#import <SRCFoundation/UIDevice+Hardware.h>
+#import <SRCFoundation/UIDevice+Software.h>
 
 
 

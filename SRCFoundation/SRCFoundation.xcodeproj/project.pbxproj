@@ -49,6 +49,10 @@
 		3C1EC0B7214600FA00815BC1 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0A5214600FA00815BC1 /* JSONModel+networking.m */; };
 		3C1EC0CD21460E3F00815BC1 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0CB21460E3E00815BC1 /* BaseModel.m */; };
 		3C1EC0CE21460E3F00815BC1 /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC0CC21460E3F00815BC1 /* BaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C1EC0F0214656AF00815BC1 /* UIDevice+Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC0EE214656AF00815BC1 /* UIDevice+Hardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C1EC0F1214656AF00815BC1 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0EF214656AF00815BC1 /* UIDevice+Hardware.m */; };
+		3C1EC0F421465B8A00815BC1 /* UIDevice+Software.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC0F221465B8A00815BC1 /* UIDevice+Software.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C1EC0F521465B8A00815BC1 /* UIDevice+Software.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0F321465B8A00815BC1 /* UIDevice+Software.m */; };
 		3C5631512137D5AC0069FEF4 /* SRCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5631472137D5AC0069FEF4 /* SRCFoundation.framework */; };
 		3C5631562137D5AC0069FEF4 /* SRCFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5631552137D5AC0069FEF4 /* SRCFoundationTests.m */; };
 		3C5631582137D5AC0069FEF4 /* SRCFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C56314A2137D5AC0069FEF4 /* SRCFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,6 +130,10 @@
 		3C1EC0A5214600FA00815BC1 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
 		3C1EC0CB21460E3E00815BC1 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		3C1EC0CC21460E3F00815BC1 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		3C1EC0EE214656AF00815BC1 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		3C1EC0EF214656AF00815BC1 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		3C1EC0F221465B8A00815BC1 /* UIDevice+Software.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Software.h"; sourceTree = "<group>"; };
+		3C1EC0F321465B8A00815BC1 /* UIDevice+Software.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Software.m"; sourceTree = "<group>"; };
 		3C5631472137D5AC0069FEF4 /* SRCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C56314A2137D5AC0069FEF4 /* SRCFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCFoundation.h; sourceTree = "<group>"; };
 		3C56314B2137D5AC0069FEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -258,6 +266,17 @@
 			path = JSONModelNetworking;
 			sourceTree = "<group>";
 		};
+		3C1EC0E92146183700815BC1 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				3C1EC0EE214656AF00815BC1 /* UIDevice+Hardware.h */,
+				3C1EC0EF214656AF00815BC1 /* UIDevice+Hardware.m */,
+				3C1EC0F221465B8A00815BC1 /* UIDevice+Software.h */,
+				3C1EC0F321465B8A00815BC1 /* UIDevice+Software.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
 		3C56313D2137D5AC0069FEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +298,7 @@
 		3C5631492137D5AC0069FEF4 /* SRCFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				3C1EC0E92146183700815BC1 /* Device */,
 				3C1EC08E214600CE00815BC1 /* Model */,
 				3C5631672137D5CE0069FEF4 /* ErrorHome.h */,
 				3C56314B2137D5AC0069FEF4 /* Info.plist */,
@@ -429,6 +449,8 @@
 				3C1EC0A7214600FA00815BC1 /* JSONKeyMapper.h in Headers */,
 				3C56316E2137D5CE0069FEF4 /* ErrorHome.h in Headers */,
 				3C1EC0CE21460E3F00815BC1 /* BaseModel.h in Headers */,
+				3C1EC0F0214656AF00815BC1 /* UIDevice+Hardware.h in Headers */,
+				3C1EC0F421465B8A00815BC1 /* UIDevice+Software.h in Headers */,
 				3C1EC0A8214600FA00815BC1 /* JSONValueTransformer.h in Headers */,
 				3C1EC0B4214600FA00815BC1 /* JSONModel+networking.h in Headers */,
 				3CB1D72021392D0800488B2C /* NSMutableString+Safe.h in Headers */,
@@ -557,6 +579,7 @@
 			files = (
 				3C07D1FC21427C6F00088242 /* AFHTTPSessionManager.m in Sources */,
 				3C07D1FD21427C6F00088242 /* AFNetworkReachabilityManager.m in Sources */,
+				3C1EC0F521465B8A00815BC1 /* UIDevice+Software.m in Sources */,
 				3C07D1FE21427C6F00088242 /* AFSecurityPolicy.m in Sources */,
 				3C1EC0A6214600FA00815BC1 /* JSONValueTransformer.m in Sources */,
 				3C07D1FF21427C6F00088242 /* AFURLRequestSerialization.m in Sources */,
@@ -569,6 +592,7 @@
 				3C77A0832140B8CB000D6EAD /* NSFileManager+Safe.m in Sources */,
 				3CCAF2F5213FC83C003714DE /* NSTimer+Safe.m in Sources */,
 				3C77A0872140C5AB000D6EAD /* NSObject+Safe.m in Sources */,
+				3C1EC0F1214656AF00815BC1 /* UIDevice+Hardware.m in Sources */,
 				3CB1D7252139352D00488B2C /* NSString+Easy.m in Sources */,
 				3CB1D72121392D0800488B2C /* NSMutableString+Safe.m in Sources */,
 				3C1EC0AB214600FA00815BC1 /* JSONModelError.m in Sources */,

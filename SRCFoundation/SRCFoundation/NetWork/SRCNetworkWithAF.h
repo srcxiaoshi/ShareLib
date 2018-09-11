@@ -22,12 +22,6 @@ typedef NS_ENUM(NSInteger, SRCNetworkReachabilityStatus) {
 //使用这个属性，监控网络状态
 @property (assign,nonatomic) SRCNetworkReachabilityStatus reachAbility;
 
-/**
- * 单例方法
- *
- *
- */
-+(SRCNetworkWithAF *)shareNetWorkingUtility;
 
 
 /**
@@ -111,9 +105,10 @@ typedef NS_ENUM(NSInteger, SRCNetworkReachabilityStatus) {
 
 /**
  *  获取网络状态
- *
+ *  返回结果字符串
  */
- 
++(NSString *)reachAbilityString;
+
  
  
 

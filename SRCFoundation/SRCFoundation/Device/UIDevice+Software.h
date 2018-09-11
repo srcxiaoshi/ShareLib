@@ -34,4 +34,10 @@
  */
 + (NSString*)deviceModel;
 
+/**
+ * 获取Platform: iphone ipad simulator
+ *
+ */
++(NSString *)devicePlatform;
+
 @end

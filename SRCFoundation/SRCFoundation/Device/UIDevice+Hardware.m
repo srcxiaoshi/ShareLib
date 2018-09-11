@@ -9,7 +9,7 @@
 #include <sys/socket.h> // Per msqr
 #include <net/if.h>
 #include <net/if_dl.h>
-
+#import "ErrorHome.h"
 #import "UIDevice+Hardware.h"
 
 @implementation UIDevice (Hardware)
@@ -154,6 +154,36 @@
 +(NSUInteger)maxSocketBufferSize
 {
     return [self getSysInfo:KIPC_MAXSOCKBUF];
+}
+
+
+/**
+ * 分辨率 width*height
+ *
+ */
++(void)resolutionRatio:(SRCUIDeviceHardwareResolutionRatio) info
+{
+    if(info)
+    {
+        CGRect rect_screen = [[UIScreen mainScreen]bounds];
+        CGSize size_screen = rect_screen.size;
+        CGFloat scale_screen = [UIScreen mainScreen].scale;
+        CGFloat width = size_screen.width*scale_screen;
+        CGFloat height = size_screen.height*scale_screen;
+        if(width>=height)
+        {
+            info(width,height);
+        }
+        else
+        {
+            info(height,width);
+        }
+    }
+    else
+    {
+        ERROR();
+    }
+    return;
 }
 
 @end

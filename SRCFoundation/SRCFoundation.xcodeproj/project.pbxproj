@@ -53,6 +53,8 @@
 		3C1EC0F1214656AF00815BC1 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0EF214656AF00815BC1 /* UIDevice+Hardware.m */; };
 		3C1EC0F421465B8A00815BC1 /* UIDevice+Software.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC0F221465B8A00815BC1 /* UIDevice+Software.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C1EC0F521465B8A00815BC1 /* UIDevice+Software.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0F321465B8A00815BC1 /* UIDevice+Software.m */; };
+		3C1EC10321466A9500815BC1 /* ServerTimestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC10121466A9500815BC1 /* ServerTimestamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C1EC10421466A9500815BC1 /* ServerTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC10221466A9500815BC1 /* ServerTimestamp.m */; };
 		3C5631512137D5AC0069FEF4 /* SRCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5631472137D5AC0069FEF4 /* SRCFoundation.framework */; };
 		3C5631562137D5AC0069FEF4 /* SRCFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5631552137D5AC0069FEF4 /* SRCFoundationTests.m */; };
 		3C5631582137D5AC0069FEF4 /* SRCFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C56314A2137D5AC0069FEF4 /* SRCFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -71,6 +73,8 @@
 		3C77A0832140B8CB000D6EAD /* NSFileManager+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C77A0812140B8CB000D6EAD /* NSFileManager+Safe.m */; };
 		3C77A0862140C5AB000D6EAD /* NSObject+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C77A0842140C5AB000D6EAD /* NSObject+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C77A0872140C5AB000D6EAD /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C77A0852140C5AB000D6EAD /* NSObject+Safe.m */; };
+		3C7EC84321475F5A004D45E8 /* AppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7EC84121475F5A004D45E8 /* AppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C7EC84421475F5A004D45E8 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EC84221475F5A004D45E8 /* AppInfo.m */; };
 		3CB1D7132138E6A500488B2C /* NSMutableDictionary+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB1D7112138E6A500488B2C /* NSMutableDictionary+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CB1D7142138E6A500488B2C /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1D7122138E6A500488B2C /* NSMutableDictionary+Safe.m */; };
 		3CB1D718213917A500488B2C /* NSString+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB1D716213917A500488B2C /* NSString+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -134,6 +138,8 @@
 		3C1EC0EF214656AF00815BC1 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		3C1EC0F221465B8A00815BC1 /* UIDevice+Software.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Software.h"; sourceTree = "<group>"; };
 		3C1EC0F321465B8A00815BC1 /* UIDevice+Software.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Software.m"; sourceTree = "<group>"; };
+		3C1EC10121466A9500815BC1 /* ServerTimestamp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerTimestamp.h; sourceTree = "<group>"; };
+		3C1EC10221466A9500815BC1 /* ServerTimestamp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerTimestamp.m; sourceTree = "<group>"; };
 		3C5631472137D5AC0069FEF4 /* SRCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C56314A2137D5AC0069FEF4 /* SRCFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCFoundation.h; sourceTree = "<group>"; };
 		3C56314B2137D5AC0069FEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,6 +161,8 @@
 		3C77A0812140B8CB000D6EAD /* NSFileManager+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Safe.m"; sourceTree = "<group>"; };
 		3C77A0842140C5AB000D6EAD /* NSObject+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
 		3C77A0852140C5AB000D6EAD /* NSObject+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
+		3C7EC84121475F5A004D45E8 /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		3C7EC84221475F5A004D45E8 /* AppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		3CB1D7112138E6A500488B2C /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		3CB1D7122138E6A500488B2C /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
 		3CB1D716213917A500488B2C /* NSString+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Safe.h"; sourceTree = "<group>"; };
@@ -277,6 +285,15 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
+		3C1EC100214669F300815BC1 /* ServerTimestamp */ = {
+			isa = PBXGroup;
+			children = (
+				3C1EC10121466A9500815BC1 /* ServerTimestamp.h */,
+				3C1EC10221466A9500815BC1 /* ServerTimestamp.m */,
+			);
+			path = ServerTimestamp;
+			sourceTree = "<group>";
+		};
 		3C56313D2137D5AC0069FEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +315,7 @@
 		3C5631492137D5AC0069FEF4 /* SRCFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				3C7EC84021475F0A004D45E8 /* App */,
 				3C1EC0E92146183700815BC1 /* Device */,
 				3C1EC08E214600CE00815BC1 /* Model */,
 				3C5631672137D5CE0069FEF4 /* ErrorHome.h */,
@@ -388,6 +406,15 @@
 			path = NSFileManager;
 			sourceTree = "<group>";
 		};
+		3C7EC84021475F0A004D45E8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3C7EC84121475F5A004D45E8 /* AppInfo.h */,
+				3C7EC84221475F5A004D45E8 /* AppInfo.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		3CB1D7152138EC9200488B2C /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +427,7 @@
 		3CCAF2F0213FC6D6003714DE /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				3C1EC100214669F300815BC1 /* ServerTimestamp */,
 				3C07D1EA2142795D00088242 /* AFNetworking */,
 				3C07D1F821427C2700088242 /* SRCNetworkWithAF.h */,
 				3C07D1F921427C2700088242 /* SRCNetworkWithAF.m */,
@@ -450,7 +478,9 @@
 				3C56316E2137D5CE0069FEF4 /* ErrorHome.h in Headers */,
 				3C1EC0CE21460E3F00815BC1 /* BaseModel.h in Headers */,
 				3C1EC0F0214656AF00815BC1 /* UIDevice+Hardware.h in Headers */,
+				3C1EC10321466A9500815BC1 /* ServerTimestamp.h in Headers */,
 				3C1EC0F421465B8A00815BC1 /* UIDevice+Software.h in Headers */,
+				3C7EC84321475F5A004D45E8 /* AppInfo.h in Headers */,
 				3C1EC0A8214600FA00815BC1 /* JSONValueTransformer.h in Headers */,
 				3C1EC0B4214600FA00815BC1 /* JSONModel+networking.h in Headers */,
 				3CB1D72021392D0800488B2C /* NSMutableString+Safe.h in Headers */,
@@ -594,6 +624,7 @@
 				3C77A0872140C5AB000D6EAD /* NSObject+Safe.m in Sources */,
 				3C1EC0F1214656AF00815BC1 /* UIDevice+Hardware.m in Sources */,
 				3CB1D7252139352D00488B2C /* NSString+Easy.m in Sources */,
+				3C7EC84421475F5A004D45E8 /* AppInfo.m in Sources */,
 				3CB1D72121392D0800488B2C /* NSMutableString+Safe.m in Sources */,
 				3C1EC0AB214600FA00815BC1 /* JSONModelError.m in Sources */,
 				3C07D1FB21427C2700088242 /* SRCNetworkWithAF.m in Sources */,
@@ -607,6 +638,7 @@
 				3C1EC0A9214600FA00815BC1 /* JSONKeyMapper.m in Sources */,
 				3C56316D2137D5CE0069FEF4 /* NSArray+Safe.m in Sources */,
 				3C67BF81213A8C9F003C4BD2 /* NSString+URL.m in Sources */,
+				3C1EC10421466A9500815BC1 /* ServerTimestamp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

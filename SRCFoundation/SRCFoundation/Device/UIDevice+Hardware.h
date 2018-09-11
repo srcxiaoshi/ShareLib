@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^SRCUIDeviceHardwareResolutionRatio)(float big,float little);
+
 
 @interface UIDevice (Hardware)
 /**
@@ -64,5 +66,10 @@
  */
 +(BOOL)hasRetinaDisplay;
 
+/**
+ * 分辨率 width*height
+ *
+ */
++(void)resolutionRatio:(SRCUIDeviceHardwareResolutionRatio) info;
 
 @end

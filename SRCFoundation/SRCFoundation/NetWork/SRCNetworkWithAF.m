@@ -406,7 +406,27 @@ static SRCNetworkWithAF *instance = nil;//单例对象
     
 }
 
+/**
+ *  获取网络状态
+ *  返回结果字符串
+ */
++(NSString *)reachAbilityString
+{
+    SRCNetworkReachabilityStatus status=[[self shareNetWorkingUtility] reachAbility];
+    switch (status) {
+        case SRCNetworkReachabilityStatusUnknown:
+            return @"UNKONWN";
+        case SRCNetworkReachabilityStatusNotReachable:
+            return @"NOTREACHABLE";
+        case SRCNetworkReachabilityStatusReachableViaWiFi:
+            return @"WIFI";
+        case SRCNetworkReachabilityStatusReachableViaWWAN:
+            return @"WWAN";
+        default:
+            return nil;
+    }
 
+}
 
 
 

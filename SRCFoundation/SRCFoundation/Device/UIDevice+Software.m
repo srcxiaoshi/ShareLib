@@ -89,7 +89,6 @@ struct utsname systemInfo;
 {
     uname(&systemInfo);
     NSString *deviceModel = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    NSLog(@"%@\n",deviceModel);
     if ([deviceModel isEqualToString:@"iPhone3,1"])    return @"iPhone 4";
     if ([deviceModel isEqualToString:@"iPhone3,2"])    return @"iPhone 4";
     if ([deviceModel isEqualToString:@"iPhone3,3"])    return @"iPhone 4";
@@ -117,8 +116,8 @@ struct utsname systemInfo;
     if ([deviceModel isEqualToString:@"iPhone10,4"])   return @"iPhone_8";
     if ([deviceModel isEqualToString:@"iPhone10,2"])   return @"iPhone_8_Plus";
     if ([deviceModel isEqualToString:@"iPhone10,5"])   return @"iPhone_8_Plus";
-    if ([deviceModel isEqualToString:@"iPhone10,3"])   return @"iPhone_X";
-    if ([deviceModel isEqualToString:@"iPhone10,6"])   return @"iPhone_X";
+    if ([deviceModel isEqualToString:@"iPhone10,3"])   return @"iPhone X";
+    if ([deviceModel isEqualToString:@"iPhone10,6"])   return @"iPhone X";
     
     
     if ([deviceModel isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
@@ -169,5 +168,11 @@ struct utsname systemInfo;
     return deviceModel;
 }
 
+
++(NSString*)devicePlatform
+{
+    NSString *deviceModel = [[UIDevice currentDevice] model];
+    return deviceModel;
+}
 
 @end

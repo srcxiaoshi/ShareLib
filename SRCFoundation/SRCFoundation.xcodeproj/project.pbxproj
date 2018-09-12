@@ -83,6 +83,8 @@
 		3CB1D72121392D0800488B2C /* NSMutableString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1D71F21392D0800488B2C /* NSMutableString+Safe.m */; };
 		3CB1D7242139352D00488B2C /* NSString+Easy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB1D7222139352D00488B2C /* NSString+Easy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CB1D7252139352D00488B2C /* NSString+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1D7232139352D00488B2C /* NSString+Easy.m */; };
+		3CBE276A2148ED250028F1FA /* Setting.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBE27682148ED250028F1FA /* Setting.h */; };
+		3CBE276B2148ED250028F1FA /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE27692148ED250028F1FA /* Setting.m */; };
 		3CCAF2F4213FC83C003714DE /* NSTimer+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCAF2F2213FC83C003714DE /* NSTimer+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CCAF2F5213FC83C003714DE /* NSTimer+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAF2F3213FC83C003714DE /* NSTimer+Safe.m */; };
 /* End PBXBuildFile section */
@@ -171,6 +173,8 @@
 		3CB1D71F21392D0800488B2C /* NSMutableString+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Safe.m"; sourceTree = "<group>"; };
 		3CB1D7222139352D00488B2C /* NSString+Easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Easy.h"; sourceTree = "<group>"; };
 		3CB1D7232139352D00488B2C /* NSString+Easy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Easy.m"; sourceTree = "<group>"; };
+		3CBE27682148ED250028F1FA /* Setting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		3CBE27692148ED250028F1FA /* Setting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
 		3CCAF2F2213FC83C003714DE /* NSTimer+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Safe.h"; sourceTree = "<group>"; };
 		3CCAF2F3213FC83C003714DE /* NSTimer+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Safe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -424,9 +428,19 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		3CBE27672148ECE70028F1FA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3CBE27682148ED250028F1FA /* Setting.h */,
+				3CBE27692148ED250028F1FA /* Setting.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		3CCAF2F0213FC6D6003714DE /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				3CBE27672148ECE70028F1FA /* Setting */,
 				3C1EC100214669F300815BC1 /* ServerTimestamp */,
 				3C07D1EA2142795D00088242 /* AFNetworking */,
 				3C07D1F821427C2700088242 /* SRCNetworkWithAF.h */,
@@ -481,6 +495,7 @@
 				3C1EC10321466A9500815BC1 /* ServerTimestamp.h in Headers */,
 				3C1EC0F421465B8A00815BC1 /* UIDevice+Software.h in Headers */,
 				3C7EC84321475F5A004D45E8 /* AppInfo.h in Headers */,
+				3CBE276A2148ED250028F1FA /* Setting.h in Headers */,
 				3C1EC0A8214600FA00815BC1 /* JSONValueTransformer.h in Headers */,
 				3C1EC0B4214600FA00815BC1 /* JSONModel+networking.h in Headers */,
 				3CB1D72021392D0800488B2C /* NSMutableString+Safe.h in Headers */,
@@ -636,6 +651,7 @@
 				3C1EC0B7214600FA00815BC1 /* JSONModel+networking.m in Sources */,
 				3C56316A2137D5CE0069FEF4 /* NSMutableArray+Safe.m in Sources */,
 				3C1EC0A9214600FA00815BC1 /* JSONKeyMapper.m in Sources */,
+				3CBE276B2148ED250028F1FA /* Setting.m in Sources */,
 				3C56316D2137D5CE0069FEF4 /* NSArray+Safe.m in Sources */,
 				3C67BF81213A8C9F003C4BD2 /* NSString+URL.m in Sources */,
 				3C1EC10421466A9500815BC1 /* ServerTimestamp.m in Sources */,

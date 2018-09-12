@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseModel.h"
+
+typedef void (^ServerTimestampBlock)(BOOL isSuccess,BaseModel *baseModel);
 
 @interface ServerTimestamp : NSObject
 
@@ -15,6 +18,6 @@
  * 获取时间戳
  *
  */
-+(void)getServerTimestamp;
++(void)getServerTimestamp:(ServerTimestampBlock) block;
 
 @end

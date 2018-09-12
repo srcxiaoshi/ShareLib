@@ -4,28 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FrameWorkMerge.xcscheme</key>
+		<key>SRCUIKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>UIKit copy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>SRCFoundation.xcscheme</key>
+		<key>UIKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
-		</dict>
-		<key>fwSRCFoundation.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>3C5631912137ECB60069FEF4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
 		</dict>
 	</dict>
 </dict>

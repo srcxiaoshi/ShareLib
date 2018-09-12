@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface NSFileManager (Safe)
-
+/**
+ * 返回一个C字符串表示一个给定的路径正确编码的Unicode字符串使用的文件系统
+ *
+ */
 -(const char *)safe_fileSystemRepresentationWithPath:(NSString *)path;
 
 @end

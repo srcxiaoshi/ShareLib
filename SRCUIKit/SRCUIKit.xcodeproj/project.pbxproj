@@ -21,21 +21,21 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3C24E9C7214BF3E60026B141 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C24E9C5214BF3E60026B141 /* NavViewController.m */; };
+		3C24E9C8214BF3E60026B141 /* NavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C24E9C6214BF3E60026B141 /* NavViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C82A02A214B415A00E16A12 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82A02B214B415A00E16A12 /* UIImage+Color.m */; };
-		3C82A05A214B926700E16A12 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82A058214B926600E16A12 /* NavViewController.m */; };
-		3C82A05B214B926700E16A12 /* NavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C82A059214B926600E16A12 /* NavViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C24E9C5214BF3E60026B141 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		3C24E9C6214BF3E60026B141 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		3C7EC8552147A9C5004D45E8 /* SRCUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRCUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCUIKit.h; sourceTree = "<group>"; };
 		3C7EC8592147A9C5004D45E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C82A02A214B415A00E16A12 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		3C82A02B214B415A00E16A12 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
-		3C82A058214B926600E16A12 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
-		3C82A059214B926600E16A12 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C24E9C4214BF3E60026B141 /* NavgationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C24E9C5214BF3E60026B141 /* NavViewController.m */,
+				3C24E9C6214BF3E60026B141 /* NavViewController.h */,
+			);
+			path = NavgationViewController;
+			sourceTree = "<group>";
+		};
 		3C7EC84B2147A9C5004D45E8 = {
 			isa = PBXGroup;
 			children = (
@@ -68,7 +77,7 @@
 		3C7EC8572147A9C5004D45E8 /* SRCUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				3C82A057214B926600E16A12 /* NavigationViewController */,
+				3C24E9C4214BF3E60026B141 /* NavgationViewController */,
 				3C82A029214B40F300E16A12 /* UIImage */,
 				3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */,
 				3C7EC8592147A9C5004D45E8 /* Info.plist */,
@@ -85,15 +94,6 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
-		3C82A057214B926600E16A12 /* NavigationViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3C82A059214B926600E16A12 /* NavViewController.h */,
-				3C82A058214B926600E16A12 /* NavViewController.m */,
-			);
-			path = NavigationViewController;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -102,7 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */,
-				3C82A05B214B926700E16A12 /* NavViewController.h in Headers */,
+				3C24E9C8214BF3E60026B141 /* NavViewController.h in Headers */,
 				3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C82A05A214B926700E16A12 /* NavViewController.m in Sources */,
+				3C24E9C7214BF3E60026B141 /* NavViewController.m in Sources */,
 				3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

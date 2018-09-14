@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		3C7EC8682147AC43004D45E8 /* UIKit */ = {
+		3C82A044214B504100E16A12 /* fwUIKit */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 3C7EC8692147AC43004D45E8 /* Build configuration list for PBXAggregateTarget "UIKit" */;
+			buildConfigurationList = 3C82A045214B504100E16A12 /* Build configuration list for PBXAggregateTarget "fwUIKit" */;
 			buildPhases = (
-				3C7EC86C2147AC4D004D45E8 /* ShellScript */,
+				3C82A048214B504800E16A12 /* Run Script */,
 			);
 			dependencies = (
 			);
-			name = UIKit;
-			productName = UIKit;
+			name = fwUIKit;
+			productName = fwUIKit;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C82A02A214B415A00E16A12 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82A02B214B415A00E16A12 /* UIImage+Color.m */; };
+		3C82A05A214B926700E16A12 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82A058214B926600E16A12 /* NavViewController.m */; };
+		3C82A05B214B926700E16A12 /* NavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C82A059214B926600E16A12 /* NavViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C7EC8552147A9C5004D45E8 /* SRCUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRCUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCUIKit.h; sourceTree = "<group>"; };
 		3C7EC8592147A9C5004D45E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C82A02A214B415A00E16A12 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		3C82A02B214B415A00E16A12 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		3C82A058214B926600E16A12 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		3C82A059214B926600E16A12 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +68,30 @@
 		3C7EC8572147A9C5004D45E8 /* SRCUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3C82A057214B926600E16A12 /* NavigationViewController */,
+				3C82A029214B40F300E16A12 /* UIImage */,
 				3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */,
 				3C7EC8592147A9C5004D45E8 /* Info.plist */,
 			);
 			path = SRCUIKit;
+			sourceTree = "<group>";
+		};
+		3C82A029214B40F300E16A12 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				3C82A02A214B415A00E16A12 /* UIImage+Color.h */,
+				3C82A02B214B415A00E16A12 /* UIImage+Color.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		3C82A057214B926600E16A12 /* NavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C82A059214B926600E16A12 /* NavViewController.h */,
+				3C82A058214B926600E16A12 /* NavViewController.m */,
+			);
+			path = NavigationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +102,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */,
+				3C82A05B214B926700E16A12 /* NavViewController.h in Headers */,
+				3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +140,7 @@
 					3C7EC8542147A9C5004D45E8 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					3C7EC8682147AC43004D45E8 = {
+					3C82A044214B504100E16A12 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -128,7 +158,7 @@
 			projectRoot = "";
 			targets = (
 				3C7EC8542147A9C5004D45E8 /* SRCUIKit */,
-				3C7EC8682147AC43004D45E8 /* UIKit */,
+				3C82A044214B504100E16A12 /* fwUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -144,13 +174,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C7EC86C2147AC4D004D45E8 /* ShellScript */ = {
+		3C82A048214B504800E16A12 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C82A05A214B926700E16A12 /* NavViewController.m in Sources */,
+				3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +265,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -350,7 +383,7 @@
 			};
 			name = Release;
 		};
-		3C7EC86A2147AC43004D45E8 /* Debug */ = {
+		3C82A046214B504100E16A12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -358,7 +391,7 @@
 			};
 			name = Debug;
 		};
-		3C7EC86B2147AC43004D45E8 /* Release */ = {
+		3C82A047214B504100E16A12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -387,11 +420,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C7EC8692147AC43004D45E8 /* Build configuration list for PBXAggregateTarget "UIKit" */ = {
+		3C82A045214B504100E16A12 /* Build configuration list for PBXAggregateTarget "fwUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C7EC86A2147AC43004D45E8 /* Debug */,
-				3C7EC86B2147AC43004D45E8 /* Release */,
+				3C82A046214B504100E16A12 /* Debug */,
+				3C82A047214B504100E16A12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

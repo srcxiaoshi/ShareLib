@@ -13,6 +13,12 @@
 
 @implementation BaseModel
 
+//所有属性可选 Optional
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
+
 #pragma overload 重写这个方法，加入一些判断
 -(instancetype)safe_initWithString:(NSString *)string error:(JSONModelError *__autoreleasing *)err
 {

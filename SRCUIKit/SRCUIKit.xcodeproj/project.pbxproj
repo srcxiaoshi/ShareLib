@@ -21,16 +21,28 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3C24E9C7214BF3E60026B141 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C24E9C5214BF3E60026B141 /* NavViewController.m */; };
-		3C24E9C8214BF3E60026B141 /* NavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C24E9C6214BF3E60026B141 /* NavViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C24E9C7214BF3E60026B141 /* SRCNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C24E9C5214BF3E60026B141 /* SRCNavViewController.m */; };
+		3C24E9C8214BF3E60026B141 /* SRCNavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C24E9C6214BF3E60026B141 /* SRCNavViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C2EC72E214CCE8500E38C7C /* Error.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2EC72D214CCE8500E38C7C /* Error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C2EC732214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2EC730214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C2EC733214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC731214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.m */; };
+		3C2EC735214CD00900E38C7C /* UIMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2EC734214CD00900E38C7C /* UIMacros.h */; };
+		3C2EC739214CD4FE00E38C7C /* SRCTextFieldWithSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2EC737214CD4FE00E38C7C /* SRCTextFieldWithSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C2EC73A214CD4FE00E38C7C /* SRCTextFieldWithSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC738214CD4FE00E38C7C /* SRCTextFieldWithSearch.m */; };
 		3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C82A02A214B415A00E16A12 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82A02B214B415A00E16A12 /* UIImage+Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C24E9C5214BF3E60026B141 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
-		3C24E9C6214BF3E60026B141 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		3C24E9C5214BF3E60026B141 /* SRCNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCNavViewController.m; sourceTree = "<group>"; };
+		3C24E9C6214BF3E60026B141 /* SRCNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCNavViewController.h; sourceTree = "<group>"; };
+		3C2EC72D214CCE8500E38C7C /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		3C2EC730214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCNavgationBarWithSearchAndCamera.h; sourceTree = "<group>"; };
+		3C2EC731214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCNavgationBarWithSearchAndCamera.m; sourceTree = "<group>"; };
+		3C2EC734214CD00900E38C7C /* UIMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIMacros.h; sourceTree = "<group>"; };
+		3C2EC737214CD4FE00E38C7C /* SRCTextFieldWithSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCTextFieldWithSearch.h; sourceTree = "<group>"; };
+		3C2EC738214CD4FE00E38C7C /* SRCTextFieldWithSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCTextFieldWithSearch.m; sourceTree = "<group>"; };
 		3C7EC8552147A9C5004D45E8 /* SRCUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRCUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCUIKit.h; sourceTree = "<group>"; };
 		3C7EC8592147A9C5004D45E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,13 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C24E9C4214BF3E60026B141 /* NavgationViewController */ = {
+		3C24E9C4214BF3E60026B141 /* SRCNavgationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3C24E9C5214BF3E60026B141 /* NavViewController.m */,
-				3C24E9C6214BF3E60026B141 /* NavViewController.h */,
+				3C24E9C5214BF3E60026B141 /* SRCNavViewController.m */,
+				3C24E9C6214BF3E60026B141 /* SRCNavViewController.h */,
 			);
-			path = NavgationViewController;
+			path = SRCNavgationViewController;
+			sourceTree = "<group>";
+		};
+		3C2EC72F214CCED200E38C7C /* SRCNavgationBar */ = {
+			isa = PBXGroup;
+			children = (
+				3C2EC730214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.h */,
+				3C2EC731214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.m */,
+			);
+			path = SRCNavgationBar;
+			sourceTree = "<group>";
+		};
+		3C2EC736214CD4D800E38C7C /* SRCTextFieldWithSearch */ = {
+			isa = PBXGroup;
+			children = (
+				3C2EC737214CD4FE00E38C7C /* SRCTextFieldWithSearch.h */,
+				3C2EC738214CD4FE00E38C7C /* SRCTextFieldWithSearch.m */,
+			);
+			path = SRCTextFieldWithSearch;
 			sourceTree = "<group>";
 		};
 		3C7EC84B2147A9C5004D45E8 = {
@@ -77,10 +107,14 @@
 		3C7EC8572147A9C5004D45E8 /* SRCUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				3C24E9C4214BF3E60026B141 /* NavgationViewController */,
+				3C2EC736214CD4D800E38C7C /* SRCTextFieldWithSearch */,
+				3C2EC72F214CCED200E38C7C /* SRCNavgationBar */,
+				3C24E9C4214BF3E60026B141 /* SRCNavgationViewController */,
 				3C82A029214B40F300E16A12 /* UIImage */,
 				3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */,
 				3C7EC8592147A9C5004D45E8 /* Info.plist */,
+				3C2EC72D214CCE8500E38C7C /* Error.h */,
+				3C2EC734214CD00900E38C7C /* UIMacros.h */,
 			);
 			path = SRCUIKit;
 			sourceTree = "<group>";
@@ -102,8 +136,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */,
-				3C24E9C8214BF3E60026B141 /* NavViewController.h in Headers */,
+				3C24E9C8214BF3E60026B141 /* SRCNavViewController.h in Headers */,
 				3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */,
+				3C2EC732214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.h in Headers */,
+				3C2EC72E214CCE8500E38C7C /* Error.h in Headers */,
+				3C2EC739214CD4FE00E38C7C /* SRCTextFieldWithSearch.h in Headers */,
+				3C2EC735214CD00900E38C7C /* UIMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C24E9C7214BF3E60026B141 /* NavViewController.m in Sources */,
+				3C24E9C7214BF3E60026B141 /* SRCNavViewController.m in Sources */,
+				3C2EC733214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.m in Sources */,
 				3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */,
+				3C2EC73A214CD4FE00E38C7C /* SRCTextFieldWithSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +379,12 @@
 		3C7EC85E2147A9C5004D45E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64,
+					armv7s,
+					armv7,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -363,6 +409,12 @@
 		3C7EC85F2147A9C5004D45E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64,
+					armv7s,
+					armv7,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

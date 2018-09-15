@@ -1,5 +1,5 @@
 //
-//  NavViewController.h
+//  SRCNavViewController.h
 //  这里做一下封装优化
 //  充分利用push 动画的时间 ，使页面在进入的时候，同时进行类似push 动画，这样可以充分减少页面的加载速度
 //  (不包括网络请求时间，网络的请求的时间我们这边不好控制）
@@ -9,6 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavViewController : UINavigationController
+@interface SRCNavViewController : UINavigationController
 
 @end

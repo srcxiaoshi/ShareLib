@@ -15,10 +15,16 @@ FOUNDATION_EXPORT double SRCUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char SRCUIKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SRCUIKit/PublicHeader.h>
+
+//ERROR
+#import <SRCUIKit/Error.h>
+
 //UIImage
 #import <SRCUIKit/UIImage+Color.h>
 
-
+//Navigationbar with search and image=camera
+#import <SRCUIKit/SRCNavgationBarWithSearchAndCamera.h>
+#import <SRCUIKit/SRCTextFieldWithSearch.h>
 
 //Controller
-#import <SRCUIKit/NavViewController.h>
+#import <SRCUIKit/SRCNavViewController.h>

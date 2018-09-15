@@ -6,14 +6,14 @@
 //  Copyright © 2018年 史瑞昌. All rights reserved.
 //
 
-#import "NavViewController.h"
+#import "SRCNavViewController.h"
 #import "UIImage+Color.h"
 
-@interface NavViewController ()
+@interface SRCNavViewController ()
 
 @end
 
-@implementation NavViewController
+@implementation SRCNavViewController
 
 -(instancetype)init
 {

@@ -817,6 +817,8 @@
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					armv7s,
+					armv7,
+					arm64,
 				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -848,6 +850,8 @@
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					armv7s,
+					armv7,
+					arm64,
 				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

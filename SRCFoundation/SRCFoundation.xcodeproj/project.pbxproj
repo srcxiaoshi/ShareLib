@@ -298,6 +298,20 @@
 			path = ServerTimestamp;
 			sourceTree = "<group>";
 		};
+		3C2EC717214CB8A700E38C7C /* NSSet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSSet;
+			sourceTree = "<group>";
+		};
+		3C2EC718214CB8A700E38C7C /* Print */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Print;
+			sourceTree = "<group>";
+		};
 		3C56313D2137D5AC0069FEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +333,8 @@
 		3C5631492137D5AC0069FEF4 /* SRCFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				3C2EC717214CB8A700E38C7C /* NSSet */,
+				3C2EC718214CB8A700E38C7C /* Print */,
 				3C7EC84021475F0A004D45E8 /* App */,
 				3C1EC0E92146183700815BC1 /* Device */,
 				3C1EC08E214600CE00815BC1 /* Model */,
@@ -330,10 +346,8 @@
 				3C77A07F2140B8A5000D6EAD /* NSFileManager */,
 				3CB1D7152138EC9200488B2C /* NSObject */,
 				3C77A07A2140A928000D6EAD /* NSOperationQueue */,
-				3C5631612137D5CE0069FEF4 /* NSSet */,
 				3C5631682137D5CE0069FEF4 /* NSString */,
 				3CCAF2F1213FC82A003714DE /* NSTimer */,
-				3CCAF2F6213FD655003714DE /* Print */,
 				3C56314A2137D5AC0069FEF4 /* SRCFoundation.h */,
 			);
 			path = SRCFoundation;
@@ -346,13 +360,6 @@
 				3C5631572137D5AC0069FEF4 /* Info.plist */,
 			);
 			path = SRCFoundationTests;
-			sourceTree = "<group>";
-		};
-		3C5631612137D5CE0069FEF4 /* NSSet */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NSSet;
 			sourceTree = "<group>";
 		};
 		3C5631622137D5CE0069FEF4 /* NSArray */ = {
@@ -456,13 +463,6 @@
 				3CCAF2F3213FC83C003714DE /* NSTimer+Safe.m */,
 			);
 			path = NSTimer;
-			sourceTree = "<group>";
-		};
-		3CCAF2F6213FD655003714DE /* Print */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Print;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

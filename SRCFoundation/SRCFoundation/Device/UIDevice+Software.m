@@ -108,10 +108,10 @@ struct utsname systemInfo;
     if ([deviceModel isEqualToString:@"iPhone9,2"])    return @"iPhone 7plus";
     
     // 日行两款手机型号均为日本独占，可能使用索尼FeliCa支付方案而不是苹果支付
-    if ([deviceModel isEqualToString:@"iPhone9,1"])    return @"国行、日版、港行iPhone 7";
-    if ([deviceModel isEqualToString:@"iPhone9,2"])    return @"港行、国行iPhone 7 Plus";
-    if ([deviceModel isEqualToString:@"iPhone9,3"])    return @"美版、台版iPhone 7";
-    if ([deviceModel isEqualToString:@"iPhone9,4"])    return @"美版、台版iPhone 7 Plus";
+    if ([deviceModel isEqualToString:@"iPhone9,1"])    return @"iPhone 7";//国行、日版、港行
+    if ([deviceModel isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus";//港行、国行
+    if ([deviceModel isEqualToString:@"iPhone9,3"])    return @"iPhone 7";//美版、台版
+    if ([deviceModel isEqualToString:@"iPhone9,4"])    return @"iPhone 7 Plus";//美版、台版
     if ([deviceModel isEqualToString:@"iPhone10,1"])   return @"iPhone_8";
     if ([deviceModel isEqualToString:@"iPhone10,4"])   return @"iPhone_8";
     if ([deviceModel isEqualToString:@"iPhone10,2"])   return @"iPhone_8_Plus";

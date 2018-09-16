@@ -12,7 +12,7 @@ typedef void(^ImagePressBlock)(void);
 typedef void(^SearchTextFieldBlock)(void);
 
 
-@interface SRCNavgationBarWithSearchAndCamera : UINavigationBar
+@interface SRCNavgationBarWithSearchAndCamera : UIView
 
 /**
  * 此block回调camera点击事件

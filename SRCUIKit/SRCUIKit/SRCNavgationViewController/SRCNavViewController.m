@@ -33,6 +33,7 @@
         [atts setObject:[UIFont systemFontOfSize:15.0f] forKey:NSFontAttributeName];
         [item setTitleTextAttributes:atts forState:UIControlStateNormal];
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithRed:0.83 green:0.24 blue:0.24 alpha:1.0] forBarMetrics:UIBarMetricsDefault];
+    
     }
     return self;
 }
@@ -40,6 +41,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //不能直接用self.navigationBarHidden = YES来隐藏导航栏，因为用这个属性的话，系统默认的右滑返回手势就没有了，切记，一定要用self.navigationBar.hidden = YES来隐藏，并将self.navigationBarHidden的值设为YES（默认就是YES，所以可以不用加这句）。
+    self.navigationBarHidden=NO;// 使右滑返回手势可用
+    self.navigationBar.hidden=YES;// 隐藏导航栏
 }
 
 #pragma overwrite

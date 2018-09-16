@@ -12,6 +12,7 @@
 #define VIEW_WIDTH   MIN([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height)
 #define VIEW_HEIGHT  MAX([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height)
 
+
 #define NavHeight               (64)
 
 

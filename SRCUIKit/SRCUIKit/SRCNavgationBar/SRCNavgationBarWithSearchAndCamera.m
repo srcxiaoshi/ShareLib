@@ -11,13 +11,13 @@
 
 #import "SRCNavgationBarWithSearchAndCamera.h"
 #import "Error.h"
-#import "UIMacros.h"
+#import "SRCDeviceInfo.h"
 #import "SRCTextFieldWithSearch.h"
 
 
 #define CAMERAVIEW_WIDTH    30
 #define CAMERAVIEW_HEIGHT   30
-
+#define SRC_NAV_BAR_BACKGROUND_COLOR    [UIColor colorWithRed:1.0 green:0.1 blue:0.1 alpha:1]
 
 @interface SRCNavgationBarWithSearchAndCamera()<SRCTextFieldDelegateWithSearch>
 
@@ -39,18 +39,19 @@
     self=[super initWithFrame:frame];
     if(self)
     {
+        self.backgroundColor=SRC_NAV_BAR_BACKGROUND_COLOR;
         //相机按钮 30*30  右15 下 9
-        self.cameraView = [[UIImageView alloc] initWithFrame:CGRectMake(VIEW_WIDTH-CAMERAVIEW_WIDTH-15, NavHeight-9, CAMERAVIEW_WIDTH, CAMERAVIEW_HEIGHT)];
+        self.cameraView = [[UIImageView alloc] initWithFrame:CGRectMake(VIEW_WIDTH-CAMERAVIEW_WIDTH-15, NavHeight-9-CAMERAVIEW_HEIGHT, CAMERAVIEW_WIDTH, CAMERAVIEW_HEIGHT)];
         self.cameraView.image = [UIImage imageNamed:@"home_camera"];
         self.cameraView.userInteractionEnabled=YES;
         //初始化一个手势
-        UIGestureRecognizer *singleTap = [[UIGestureRecognizer alloc] initWithTarget:self action:@selector(imagePress)];
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imagePress)];
         //为图片添加手势
         [self.cameraView addGestureRecognizer:singleTap];
         [self addSubview:self.cameraView];
         
         //文本输入框
-        self.textField=[[SRCTextFieldWithSearch alloc] initWithFrame:CGRectMake(NAV_BAR_SEARCH_TEXT_EDGE_LEFT, NavHeight-NAV_BAR_SEARCH_TEXT_EDGE_BOTTOM, VIEW_WIDTH-NAV_BAR_SEARCH_TEXT_EDGE_LEFT*2-CAMERAVIEW_WIDTH-15, NAV_BAR_SEARCH_TEXT_HEIGHT)];
+        self.textField=[[SRCTextFieldWithSearch alloc] initWithFrame:CGRectMake(NAV_BAR_SEARCH_TEXT_EDGE_LEFT, NavHeight-NAV_BAR_SEARCH_TEXT_EDGE_BOTTOM-NAV_BAR_SEARCH_TEXT_HEIGHT, VIEW_WIDTH-NAV_BAR_SEARCH_TEXT_EDGE_LEFT*2-CAMERAVIEW_WIDTH-15, NAV_BAR_SEARCH_TEXT_HEIGHT)];
         self.textField.searchEditDelegate=self;
         [self addSubview:self.textField];
     

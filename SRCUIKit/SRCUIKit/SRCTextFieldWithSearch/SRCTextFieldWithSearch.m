@@ -8,7 +8,7 @@
 
 #import "SRCTextFieldWithSearch.h"
 #import "Error.h"
-#import "UIMacros.h"
+#import "SRCDeviceInfo.h"
 
 
 

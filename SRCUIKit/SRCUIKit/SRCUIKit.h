@@ -19,6 +19,9 @@ FOUNDATION_EXPORT const unsigned char SRCUIKitVersionString[];
 //ERROR
 #import <SRCUIKit/Error.h>
 
+//UIDevice
+#import <SRCUIKit/SRCDeviceInfo.h>
+
 //UIImage
 #import <SRCUIKit/UIImage+Color.h>
 

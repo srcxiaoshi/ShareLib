@@ -59,9 +59,8 @@
         //是不是要重传，由外面用户决定
         if(block)
         {
-            __autoreleasing JSONModelError *err=nil;
-            BaseModel *basemodel=[[BaseModel alloc]safe_initWithString:response error:&err];
-            if(err)
+            BaseModel *basemodel=[[BaseModel alloc]safe_initWithString:response];
+            if(!basemodel)
             {
                 block(isSuccess,nil);
                 return;

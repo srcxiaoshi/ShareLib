@@ -40,7 +40,7 @@
 
 
 #pragma overload 重写这个方法，加入一些判断
--(instancetype)safe_initWithString:(NSString *)string error:(JSONModelError *__autoreleasing *)err
+-(instancetype)safe_initWithString:(NSString *)string
 {
     if(self&&[self isKindOfClass:[JSONModel class]])
     {
@@ -54,7 +54,6 @@
         typeof(self) temp= [self initWithString:string error:&self_err];
         if(self_err)
         {
-            err=&self_err;
             ERROR();
             return nil;
         }
@@ -92,12 +91,12 @@
             BOOL isSuccess=class_addProtocol(class, protocol);
             if (!isSuccess)
             {
-                NSLog(@"%@ fail",class);
+                //NSLog(@"%@ fail",class);
                 ERROR();
             }
             else
             {
-                NSLog(@"%@ success",class);
+                //NSLog(@"%@ success",class);
             }
         }
         else
@@ -119,7 +118,7 @@
 - (void)objc_registerProtocol:(Protocol *)protocol {
     if (protocol)
     {
-        NSLog(@"%@ objc_registerProtocol",protocol);
+        //NSLog(@"%@ objc_registerProtocol",protocol);
         objc_registerProtocol(protocol);
     }
 }
@@ -159,7 +158,7 @@
     if (!pro)
     {
         Protocol *protocol = objc_allocateProtocol(name);
-        NSLog(@"%s,%@ objc_allocateProtocol",name,protocol);
+        //NSLog(@"%s,%@ objc_allocateProtocol",name,protocol);
         return protocol;
     }
     return nil;

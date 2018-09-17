@@ -14,6 +14,6 @@
 @property(nonatomic,copy)NSString <Optional>* message;
 
 
--(instancetype)safe_initWithString:(NSString *)string error:(JSONModelError *__autoreleasing *)err;
+-(instancetype)safe_initWithString:(NSString *)string;
 
 @end

@@ -19,14 +19,43 @@
 #define CAMERAVIEW_HEIGHT   30
 #define SRC_NAV_BAR_BACKGROUND_COLOR    [UIColor colorWithRed:1.0 green:0.1 blue:0.1 alpha:1]
 
+
+
 @interface SRCNavgationBarWithSearchAndCamera()<SRCTextFieldDelegateWithSearch>
 
 @property(nonatomic,strong)SRCTextFieldWithSearch *textField;
 @property(nonatomic,strong)UIImageView *cameraView;
 
+/**
+ * 此block回调camera点击事件
+ *
+ */
+@property(nonatomic,copy)void (^imagePressBlock)(void);
+
+/**
+ * 此block回调textFieldShouldBeginEditing事件
+ *
+ */
+@property(nonatomic,copy)void (^searchTextBlock)(UITextField *textField);
+
+
 @end
 
 @implementation SRCNavgationBarWithSearchAndCamera
+
+-(instancetype)initWithTextFieldBlock:(void(^)(UITextField *textField))searchTextFeildBlock imagePressBlock:(void(^)(void))imagePressBlock
+{
+    SRCNavgationBarWithSearchAndCamera *instance=[self initWithFrame:CGRectMake(0, 0, VIEW_WIDTH, NavHeight)];
+    if(searchTextFeildBlock)
+    {
+        self.searchTextBlock=searchTextFeildBlock;
+    }
+    if(imagePressBlock)
+    {
+        self.imagePressBlock = imagePressBlock;
+    }
+    return instance;
+}
 
 -(instancetype)init
 {
@@ -73,13 +102,23 @@
     }
 }
 
+-(void)updateText:(NSString *)text
+{
+    if(self.textField)
+    {
+        if(text)
+        {
+            self.textField.text=text;
+        }
+    }
+}
 
 #pragma delegate
 - (BOOL)searchTextFieldShouldBeginEditing:(UITextField *)textField
 {
     if(self.searchTextBlock)
     {
-        self.searchTextBlock();
+        self.searchTextBlock(textField);
     }
     return NO;
 }

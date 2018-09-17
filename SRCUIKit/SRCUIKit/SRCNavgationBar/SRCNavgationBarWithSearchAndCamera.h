@@ -8,24 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^ImagePressBlock)(void);
-typedef void(^SearchTextFieldBlock)(void);
-
-
 @interface SRCNavgationBarWithSearchAndCamera : UIView
 
 /**
- * 此block回调camera点击事件
+ *  用来初始化和回调的方法
  *
  */
-@property(nonatomic,copy)ImagePressBlock imagePressBlock;
-
+-(instancetype)initWithTextFieldBlock:(void(^)(UITextField *textField))searchTextFeildBlock imagePressBlock:(void(^)(void))imagePressBlock;
 
 /**
- * 此block回调textFieldShouldBeginEditing事件
+ *  用于更新text
  *
  */
-@property(nonatomic,copy)SearchTextFieldBlock searchTextBlock;
-
+-(void)updateText:(NSString *)text;
 
 @end

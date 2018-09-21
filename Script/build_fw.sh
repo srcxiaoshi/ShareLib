@@ -33,10 +33,12 @@ if [ -d "${INSTALL_DIR}" ]
 then
 rm -rf "${INSTALL_DIR}"
 fi
+
 # mkdir -p "${INSTALL_DIR}"
 cp -a "${DEVICE_DIR}/" "${INSTALL_DIR}/"
+cp -a "${SIMULATOR_DIR}/" "${INSTALL_DIR}/"
 
 # Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.
 lipo -create "${DEVICE_DIR}/${FMK_NAME}" "${SIMULATOR_DIR}/${FMK_NAME}" -output "${INSTALL_DIR}/${FMK_NAME}"
 rm -r "${WRK_DIR}"
-open "${INSTALL_DIR}"
+#open "${INSTALL_DIR}"

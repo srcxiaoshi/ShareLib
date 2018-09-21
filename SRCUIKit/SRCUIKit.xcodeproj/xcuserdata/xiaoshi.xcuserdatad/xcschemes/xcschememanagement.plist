@@ -7,7 +7,7 @@
 		<key>SRCUIKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>UIKit copy.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>fwUIKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 </dict>

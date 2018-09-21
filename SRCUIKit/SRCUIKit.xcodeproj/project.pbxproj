@@ -30,9 +30,15 @@
 		3C2EC73A214CD4FE00E38C7C /* SRCTextFieldWithSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC738214CD4FE00E38C7C /* SRCTextFieldWithSearch.m */; };
 		3C2EC789214D0B7C00E38C7C /* SRCDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2EC787214D0B7C00E38C7C /* SRCDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C2EC78A214D0B7C00E38C7C /* SRCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC788214D0B7C00E38C7C /* SRCDeviceInfo.m */; };
+		3C6C7564214F8BC8003B5AFD /* SRCMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6C7562214F8BC8003B5AFD /* SRCMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C6C7565214F8BC8003B5AFD /* SRCMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C7563214F8BC8003B5AFD /* SRCMenuItem.m */; };
 		3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C82A02A214B415A00E16A12 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82A02B214B415A00E16A12 /* UIImage+Color.m */; };
+		3CA3C0392150E1A800154073 /* UIColor+Easy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3C0372150E1A800154073 /* UIColor+Easy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA3C03A2150E1A800154073 /* UIColor+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3C0382150E1A800154073 /* UIColor+Easy.m */; };
+		3CA3C04F2150E81900154073 /* SRCMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3C04D2150E81900154073 /* SRCMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA3C0502150E81900154073 /* SRCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3C04E2150E81900154073 /* SRCMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,11 +51,17 @@
 		3C2EC738214CD4FE00E38C7C /* SRCTextFieldWithSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCTextFieldWithSearch.m; sourceTree = "<group>"; };
 		3C2EC787214D0B7C00E38C7C /* SRCDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCDeviceInfo.h; sourceTree = "<group>"; };
 		3C2EC788214D0B7C00E38C7C /* SRCDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCDeviceInfo.m; sourceTree = "<group>"; };
+		3C6C7562214F8BC8003B5AFD /* SRCMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCMenuItem.h; sourceTree = "<group>"; };
+		3C6C7563214F8BC8003B5AFD /* SRCMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCMenuItem.m; sourceTree = "<group>"; };
 		3C7EC8552147A9C5004D45E8 /* SRCUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRCUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCUIKit.h; sourceTree = "<group>"; };
 		3C7EC8592147A9C5004D45E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C82A02A214B415A00E16A12 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		3C82A02B214B415A00E16A12 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		3CA3C0372150E1A800154073 /* UIColor+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Easy.h"; sourceTree = "<group>"; };
+		3CA3C0382150E1A800154073 /* UIColor+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Easy.m"; sourceTree = "<group>"; };
+		3CA3C04D2150E81900154073 /* SRCMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCMenuView.h; sourceTree = "<group>"; };
+		3CA3C04E2150E81900154073 /* SRCMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,24 @@
 			path = UIDevice;
 			sourceTree = "<group>";
 		};
+		3C6C7560214F8B6F003B5AFD /* SRCMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3CA3C04C2150E7F200154073 /* SRCMenuView */,
+				3C6C7561214F8B86003B5AFD /* SRCMenuItem */,
+			);
+			path = SRCMenu;
+			sourceTree = "<group>";
+		};
+		3C6C7561214F8B86003B5AFD /* SRCMenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				3C6C7562214F8BC8003B5AFD /* SRCMenuItem.h */,
+				3C6C7563214F8BC8003B5AFD /* SRCMenuItem.m */,
+			);
+			path = SRCMenuItem;
+			sourceTree = "<group>";
+		};
 		3C7EC84B2147A9C5004D45E8 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +148,8 @@
 		3C7EC8572147A9C5004D45E8 /* SRCUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3CA3C0362150E1A800154073 /* UIColor */,
+				3C6C7560214F8B6F003B5AFD /* SRCMenu */,
 				3C2EC72D214CCE8500E38C7C /* Error.h */,
 				3C7EC8592147A9C5004D45E8 /* Info.plist */,
 				3C2EC72F214CCED200E38C7C /* SRCNavgationBar */,
@@ -139,6 +171,24 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		3CA3C0362150E1A800154073 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				3CA3C0372150E1A800154073 /* UIColor+Easy.h */,
+				3CA3C0382150E1A800154073 /* UIColor+Easy.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		3CA3C04C2150E7F200154073 /* SRCMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				3CA3C04D2150E81900154073 /* SRCMenuView.h */,
+				3CA3C04E2150E81900154073 /* SRCMenuView.m */,
+			);
+			path = SRCMenuView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -152,6 +202,9 @@
 				3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */,
 				3C2EC732214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.h in Headers */,
 				3C2EC72E214CCE8500E38C7C /* Error.h in Headers */,
+				3CA3C04F2150E81900154073 /* SRCMenuView.h in Headers */,
+				3CA3C0392150E1A800154073 /* UIColor+Easy.h in Headers */,
+				3C6C7564214F8BC8003B5AFD /* SRCMenuItem.h in Headers */,
 				3C2EC739214CD4FE00E38C7C /* SRCTextFieldWithSearch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,7 +236,7 @@
 		3C7EC84C2147A9C5004D45E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "史瑞昌";
 				TargetAttributes = {
 					3C7EC8542147A9C5004D45E8 = {
@@ -244,10 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA3C0502150E81900154073 /* SRCMenuView.m in Sources */,
+				3CA3C03A2150E1A800154073 /* UIColor+Easy.m in Sources */,
 				3C2EC78A214D0B7C00E38C7C /* SRCDeviceInfo.m in Sources */,
 				3C24E9C7214BF3E60026B141 /* SRCNavViewController.m in Sources */,
 				3C2EC733214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.m in Sources */,
 				3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */,
+				3C6C7565214F8BC8003B5AFD /* SRCMenuItem.m in Sources */,
 				3C2EC73A214CD4FE00E38C7C /* SRCTextFieldWithSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,11 +315,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					armv7s,
-				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -313,11 +364,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -328,11 +380,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					armv7s,
-				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -377,6 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
@@ -391,12 +439,6 @@
 		3C7EC85E2147A9C5004D45E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					armv7s,
-					armv7,
-				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -421,12 +463,6 @@
 		3C7EC85F2147A9C5004D45E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					armv7s,
-					armv7,
-				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

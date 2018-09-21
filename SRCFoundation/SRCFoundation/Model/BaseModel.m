@@ -39,7 +39,7 @@
 }
 
 
-#pragma overload 重写这个方法，加入一些判断
+#pragma overload
 -(instancetype)safe_initWithString:(NSString *)string
 {
     if(self&&[self isKindOfClass:[JSONModel class]])

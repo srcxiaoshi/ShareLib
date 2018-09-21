@@ -37,6 +37,7 @@
 //这个方法是把url中的参数，按照dictionary取到dict中
 -(NSDictionary *)URL_paramsFromURLString
 {
+    //没有办法处理的情况:参数是[]数组的
     if([NSString safe_isEmpty:self]||[self isEqualToString:@""])
         return nil;
     NSMutableDictionary *dic=[NSMutableDictionary new];

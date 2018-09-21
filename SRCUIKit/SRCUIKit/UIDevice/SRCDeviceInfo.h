@@ -53,6 +53,16 @@ extern iPhoneDeviceType global_deviceType;
 #define NavHeight               VALUE_FOR_IPHONE_X((96),(64))
 
 
+//一些UI
+#define SRCMENUVIEW_WIDTH   52
+#define SRCMENUVIEW_HEIGHT   36
+
+#define SRCMENUVIEW_BTN_WIDTH   52
+#define SRCMENUVIEW_BTN_HEIGHT   35
+
+#define SRCITEM_WIDTH   60
+#define SRCITEM_HEIGHT   35
+
 @interface SRCDeviceInfo : NSObject
 
 /**

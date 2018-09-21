@@ -31,3 +31,13 @@ FOUNDATION_EXPORT const unsigned char SRCUIKitVersionString[];
 
 //Controller
 #import <SRCUIKit/SRCNavViewController.h>
+
+//Color
+#import <SRCUIKit/UIColor+Easy.h>
+
+
+//Menu
+#import <SRCUIKit/SRCMenuItem.h>
+#import <SRCUIKit/SRCMenuView.h>
+
+

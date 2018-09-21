@@ -65,7 +65,7 @@
 {
     if(index<[self count])
     {
-        [self objectAtIndex:index];
+        return [self objectAtIndex:index];
     }
     else
     {

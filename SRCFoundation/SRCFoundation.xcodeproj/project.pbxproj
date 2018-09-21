@@ -39,7 +39,6 @@
 		3C1EC0AD214600FA00815BC1 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC09A214600FA00815BC1 /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C1EC0AE214600FA00815BC1 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC09B214600FA00815BC1 /* JSONModelClassProperty.m */; };
 		3C1EC0AF214600FA00815BC1 /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC09C214600FA00815BC1 /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C1EC0B0214600FA00815BC1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C1EC09D214600FA00815BC1 /* Info.plist */; };
 		3C1EC0B1214600FA00815BC1 /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EC09E214600FA00815BC1 /* JSONModelLib.h */; };
 		3C1EC0B2214600FA00815BC1 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0A0214600FA00815BC1 /* JSONHTTPClient.m */; };
 		3C1EC0B3214600FA00815BC1 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC0A1214600FA00815BC1 /* JSONAPI.m */; };
@@ -126,7 +125,6 @@
 		3C1EC09A214600FA00815BC1 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
 		3C1EC09B214600FA00815BC1 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
 		3C1EC09C214600FA00815BC1 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
-		3C1EC09D214600FA00815BC1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C1EC09E214600FA00815BC1 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
 		3C1EC0A0214600FA00815BC1 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
 		3C1EC0A1214600FA00815BC1 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 				3C1EC090214600FA00815BC1 /* JSONModelTransformations */,
 				3C1EC095214600FA00815BC1 /* module.modulemap */,
 				3C1EC096214600FA00815BC1 /* JSONModel */,
-				3C1EC09D214600FA00815BC1 /* Info.plist */,
 				3C1EC09E214600FA00815BC1 /* JSONModelLib.h */,
 				3C1EC09F214600FA00815BC1 /* JSONModelNetworking */,
 			);
@@ -588,7 +585,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1EC0B0214600FA00815BC1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,7 +735,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -817,7 +813,6 @@
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					armv7s,
-					armv7,
 					arm64,
 				);
 				CODE_SIGN_IDENTITY = "";
@@ -835,6 +830,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Src.SRCFoundation;
@@ -850,7 +846,6 @@
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					armv7s,
-					armv7,
 					arm64,
 				);
 				CODE_SIGN_IDENTITY = "";
@@ -887,6 +882,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Src.SRCFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -913,8 +909,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -922,9 +920,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

@@ -40,4 +40,14 @@ FOUNDATION_EXPORT const unsigned char SRCUIKitVersionString[];
 #import <SRCUIKit/SRCMenuItem.h>
 #import <SRCUIKit/SRCMenuView.h>
 
+//collectionview
+#import <SRCUIKit/SRCPageView.h>
+#import <SRCUIKit/SRCPageViewCell.h>
+#import <SRCUIKit/SRCPageLayout.h>
+
+
+
+
+
+
 

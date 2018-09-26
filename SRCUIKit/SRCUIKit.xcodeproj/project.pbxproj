@@ -39,6 +39,12 @@
 		3CA3C03A2150E1A800154073 /* UIColor+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3C0382150E1A800154073 /* UIColor+Easy.m */; };
 		3CA3C04F2150E81900154073 /* SRCMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3C04D2150E81900154073 /* SRCMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CA3C0502150E81900154073 /* SRCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3C04E2150E81900154073 /* SRCMenuView.m */; };
+		3CA5854E2154EDF500066AFE /* SRCPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA5854C2154EDF500066AFE /* SRCPageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA5854F2154EDF500066AFE /* SRCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA5854D2154EDF500066AFE /* SRCPageView.m */; };
+		3CA585522154F08300066AFE /* SRCPageViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA585502154F08300066AFE /* SRCPageViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA585532154F08300066AFE /* SRCPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA585512154F08300066AFE /* SRCPageViewCell.m */; };
+		3CBE3CC32159C69C00FD65D7 /* SRCPageLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBE3CC12159C69C00FD65D7 /* SRCPageLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CBE3CC42159C69C00FD65D7 /* SRCPageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE3CC22159C69C00FD65D7 /* SRCPageLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		3CA3C0382150E1A800154073 /* UIColor+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Easy.m"; sourceTree = "<group>"; };
 		3CA3C04D2150E81900154073 /* SRCMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCMenuView.h; sourceTree = "<group>"; };
 		3CA3C04E2150E81900154073 /* SRCMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCMenuView.m; sourceTree = "<group>"; };
+		3CA5854C2154EDF500066AFE /* SRCPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCPageView.h; sourceTree = "<group>"; };
+		3CA5854D2154EDF500066AFE /* SRCPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCPageView.m; sourceTree = "<group>"; };
+		3CA585502154F08300066AFE /* SRCPageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCPageViewCell.h; sourceTree = "<group>"; };
+		3CA585512154F08300066AFE /* SRCPageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCPageViewCell.m; sourceTree = "<group>"; };
+		3CBE3CC12159C69C00FD65D7 /* SRCPageLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCPageLayout.h; sourceTree = "<group>"; };
+		3CBE3CC22159C69C00FD65D7 /* SRCPageLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCPageLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +160,7 @@
 		3C7EC8572147A9C5004D45E8 /* SRCUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3CA5854B2154EDC400066AFE /* SRCPageView */,
 				3CA3C0362150E1A800154073 /* UIColor */,
 				3C6C7560214F8B6F003B5AFD /* SRCMenu */,
 				3C2EC72D214CCE8500E38C7C /* Error.h */,
@@ -189,6 +202,19 @@
 			path = SRCMenuView;
 			sourceTree = "<group>";
 		};
+		3CA5854B2154EDC400066AFE /* SRCPageView */ = {
+			isa = PBXGroup;
+			children = (
+				3CA5854C2154EDF500066AFE /* SRCPageView.h */,
+				3CA5854D2154EDF500066AFE /* SRCPageView.m */,
+				3CA585502154F08300066AFE /* SRCPageViewCell.h */,
+				3CA585512154F08300066AFE /* SRCPageViewCell.m */,
+				3CBE3CC12159C69C00FD65D7 /* SRCPageLayout.h */,
+				3CBE3CC22159C69C00FD65D7 /* SRCPageLayout.m */,
+			);
+			path = SRCPageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -204,6 +230,9 @@
 				3C2EC72E214CCE8500E38C7C /* Error.h in Headers */,
 				3CA3C04F2150E81900154073 /* SRCMenuView.h in Headers */,
 				3CA3C0392150E1A800154073 /* UIColor+Easy.h in Headers */,
+				3CA585522154F08300066AFE /* SRCPageViewCell.h in Headers */,
+				3CBE3CC32159C69C00FD65D7 /* SRCPageLayout.h in Headers */,
+				3CA5854E2154EDF500066AFE /* SRCPageView.h in Headers */,
 				3C6C7564214F8BC8003B5AFD /* SRCMenuItem.h in Headers */,
 				3C2EC739214CD4FE00E38C7C /* SRCTextFieldWithSearch.h in Headers */,
 			);
@@ -299,12 +328,15 @@
 			files = (
 				3CA3C0502150E81900154073 /* SRCMenuView.m in Sources */,
 				3CA3C03A2150E1A800154073 /* UIColor+Easy.m in Sources */,
+				3CA585532154F08300066AFE /* SRCPageViewCell.m in Sources */,
 				3C2EC78A214D0B7C00E38C7C /* SRCDeviceInfo.m in Sources */,
+				3CBE3CC42159C69C00FD65D7 /* SRCPageLayout.m in Sources */,
 				3C24E9C7214BF3E60026B141 /* SRCNavViewController.m in Sources */,
 				3C2EC733214CCEF500E38C7C /* SRCNavgationBarWithSearchAndCamera.m in Sources */,
 				3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */,
 				3C6C7565214F8BC8003B5AFD /* SRCMenuItem.m in Sources */,
 				3C2EC73A214CD4FE00E38C7C /* SRCTextFieldWithSearch.m in Sources */,
+				3CA5854F2154EDF500066AFE /* SRCPageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

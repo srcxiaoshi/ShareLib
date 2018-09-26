@@ -183,7 +183,11 @@
 {
     if(!_leftBtn)
     {
-        _leftBtn=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, SRCMENUVIEW_BTN_WIDTH, SRCMENUVIEW_BTN_HEIGHT)];
+        CGRect frame=CGRectMake(0, 0, SRCMENUVIEW_BTN_WIDTH, SRCMENUVIEW_BTN_HEIGHT);
+        _leftBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+        _leftBtn.frame=frame;
+        [_leftBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 15, 0, 0)];
+        
         [_leftBtn setImage:[UIImage imageNamed:@"add_channel_titlbar_thin_new_16x16_"] forState:UIControlStateNormal];
         [_leftBtn setBackgroundImage:[UIImage imageNamed:@"shadow_add_titlebar_new3_52x36_"] forState:UIControlStateNormal];
         [_rightBtn addTarget:self action:@selector(leftBtnPress) forControlEvents:UIControlEventTouchUpInside];

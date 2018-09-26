@@ -8,6 +8,64 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+
+
+@class SRCPageView;
+@class SRCPageViewCell;
+@protocol SRCPageViewDelegate<NSObject>
+
+@required
+/**
+ * cell个数
+ */
+-(NSInteger)SRCPageViewNumberOfItems:(nonnull UICollectionView *)collectionView;
+
+/**
+ * cell样式与内容
+ */
+-(SRCPageViewCell *)SRCPageView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+
+
+
+@optional
+/**
+ * 滑动停止后调用，返回pageIndex
+ */
+-(void)SRCPageView:(nonnull UICollectionView *)collectionView pageIndex:(NSInteger)pageIndex;
+
+/**
+ * 点击事件
+ */
+-(void)SRCPageView:(nonnull UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+
+
+//样式标识
+static NSString * const SRCPageViewCellDefaultID=@"SRCCollectionViewCellDeFault";
+
+
+
 @interface SRCPageView : UIView
+
+/**
+ * delegate
+ */
+@property(nonatomic,weak)id <SRCPageViewDelegate> delegate;
+
+
+/**
+ * 刷新整个view的方法 所有的cell都会被重置
+ */
+-(void)refreshView;
+
+
+/**
+ * 设置pageindex对应的page显示到中间去
+ */
+-(void)scollToItemWithPageIndex:(NSInteger)pageIndex;
 
 @end

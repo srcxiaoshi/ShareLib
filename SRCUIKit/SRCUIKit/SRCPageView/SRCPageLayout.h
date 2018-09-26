@@ -10,4 +10,11 @@
 
 @interface SRCPageLayout : UICollectionViewFlowLayout
 
+
+/**
+ * 初始化方法
+ */
+-(instancetype)initWithPageIndexBlock:(void(^)(NSInteger pageIndex)) block;
+
+
 @end

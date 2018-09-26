@@ -16,9 +16,28 @@
 
 @property(nonatomic,strong)NSMutableArray *attributesArray;
 
+@property(nonatomic,copy) void (^pageIndexBlock)(NSInteger pageIndex);
+
+//当前页的索引
+@property(nonatomic,assign) NSInteger nowPageIndex;
+
 @end
 
 @implementation SRCPageLayout
+
+#pragma mark public
+-(instancetype)initWithPageIndexBlock:(void (^)(NSInteger))block
+{
+    self=[super init];
+    if(self)
+    {
+        if(block)
+        {
+            self.pageIndexBlock=block;
+        }
+    }
+    return self;
+}
 
 
 
@@ -65,8 +84,7 @@
     CGFloat centerX = proposedContentOffset.x + self.collectionView.frame.size.width * 0.5;
     if([arr count]==0)
     {
-        //没有
-        
+        //没有 异常？
     }
     else if([arr count]==1)
     {
@@ -81,11 +99,18 @@
         if(ABS(att0.center.x-centerX)>ABS(att1.center.x-centerX))
         {
             proposedContentOffset=CGPointMake(att1.center.x-self.collectionView.frame.size.width * 0.5, 0);
+            
         }
         else
         {
             proposedContentOffset=CGPointMake(att0.center.x-self.collectionView.frame.size.width * 0.5, 0);
         }
+    }
+    //下取整
+    self.nowPageIndex=(int)(proposedContentOffset.x/self.collectionView.frame.size.width);
+    if(self.pageIndexBlock)
+    {
+        self.pageIndexBlock(self.nowPageIndex);
     }
     return proposedContentOffset;
 
@@ -121,5 +146,9 @@
 {
     return YES;
 }
+
+
+
+
 
 @end

@@ -33,6 +33,7 @@
 
 @implementation SRCMenuView
 
+#pragma mark public
 -(instancetype)initWithFrame:(CGRect)frame leftBtn:(BOOL) leftBtn rightBtn:(BOOL) rightBtn
 {
     self=[super initWithFrame:frame];
@@ -47,13 +48,60 @@
         [self rightBtn];
     }
     //这里加一个下划线
-    UIView *line=[[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y+frame.size.height+1, frame.size.width, 1)];
+    UIView *line=[[UIView alloc] initWithFrame:CGRectMake(0,frame.size.height, frame.size.width, 1)];
     [self addSubview:line];
     return self;
 }
 
 
+/**
+ *  设置成选中
+ *
+ */
+-(void)setSelectedWithPageIndex:(NSInteger )pageIndex
+{
+    if(self.items&&[self.items count]>pageIndex)
+    {
+        if(self.selectedItemNow)
+        {
+            [self.selectedItemNow setSelected:NO withAnimation:NO];
+        }
+        SRCMenuItem *item=[self.items objectAtIndex:pageIndex];
+        [self scrollToSelectedItem:item];
+        [item setSelected:YES withAnimation:YES];
+        self.selectedItemNow=item;
+    }
+}
 
+#pragma mark private
+/**
+ *  滑动到item居中  的位置
+ *
+ */
+-(void)scrollToSelectedItem:(SRCMenuItem *)item
+{
+    CGFloat deltax=item.frame.origin.x+item.frame.size.width*0.5;
+    if(deltax<=self.frame.size.width*0.5)
+    {
+        CGPoint point=CGPointMake(0, 0);
+        [self.scrollView setContentOffset:point animated:YES];
+        return;
+    }
+    if(deltax>self.frame.size.width*0.5 &&
+       deltax+self.frame.size.width*0.5<self.scrollView.contentSize.width)
+    {
+        CGPoint point=CGPointMake(deltax-self.frame.size.width*0.5, 0);
+        [self.scrollView setContentOffset:point animated:YES];
+        return;
+    }
+    if(deltax+self.frame.size.width*0.5>self.scrollView.contentSize.width)
+    {
+        CGPoint point=CGPointMake(self.scrollView.contentSize.width-self.frame.size.width, 0);
+        [self.scrollView setContentOffset:point animated:YES];
+        return;
+    }
+    
+}
 
 -(void)reloadDataAndUpdate
 {
@@ -105,9 +153,9 @@
                     }
                     
                     
-                    if(strongself.delegate&&[strongself.delegate respondsToSelector:@selector(menuView:)])
+                    if(strongself.delegate&&[strongself.delegate respondsToSelector:@selector(menuView:index:)])
                     {
-                        [strongself.delegate menuView:item];
+                        [strongself.delegate menuView:item index:i];
                     }
                 }];
                 item.text=[self.data objectAtIndex:i];
@@ -124,19 +172,11 @@
             UIView *subview=[views objectAtIndex:i];
             [subview removeFromSuperview];
         }
+        
         for(int i=0;i<[self.items count];i++)
         {
             SRCMenuItem *ii=[self.items objectAtIndex:i];
             [ii setSelected:NO withAnimation:NO];
-            if(!self.selectedItemNow)
-            {
-                if([ii.text isEqualToString:@"推荐"])
-                {
-                    self.selectedItemNow=ii;
-                    [self.selectedItemNow setSelected:YES withAnimation:YES];
-                }
-            }
-            
             [self.scrollView addSubview:ii];
         }
 

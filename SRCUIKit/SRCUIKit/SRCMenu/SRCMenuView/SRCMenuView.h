@@ -11,15 +11,38 @@
 
 @class SRCMenuView;
 
+/**
+ *  datasource
+ *
+ */
 @protocol SRCMenuViewDataSource<NSObject>
 @required
+/**
+ *  item的number
+ *
+ */
 - (NSInteger)numbersOfTitlesInMenuView:(SRCMenuView *)menu;
+
+/**
+ *  item的title
+ *
+ */
 - (NSString *)menuView:(SRCMenuView *)menu titleAtIndex:(NSInteger)index;
 @end
 
+
+
+/**
+ *  delegate
+ *
+ */
 @protocol SRCMenuViewDelegate<NSObject>
 @optional
--(void)menuView:(SRCMenuItem *)item;
+/**
+ *  点击事件
+ *
+ */
+-(void)menuView:(SRCMenuItem *)item index:(NSInteger) index;
 @end
 
 
@@ -41,6 +64,12 @@
  *
  */
 -(void)reloadDataAndUpdate;
+
+/**
+ *  设置成选中
+ *
+ */
+-(void)setSelectedWithPageIndex:(NSInteger)pageIndex;
 
 @end
 

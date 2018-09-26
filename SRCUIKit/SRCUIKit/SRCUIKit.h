@@ -45,6 +45,8 @@ FOUNDATION_EXPORT const unsigned char SRCUIKitVersionString[];
 #import <SRCUIKit/SRCPageViewCell.h>
 #import <SRCUIKit/SRCPageLayout.h>
 
+//tableview
+#import <SRCUIKit/SRCTableView.h>
 
 
 

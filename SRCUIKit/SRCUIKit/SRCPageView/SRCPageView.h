@@ -58,14 +58,14 @@ static NSString * const SRCPageViewCellDefaultID=@"SRCCollectionViewCellDeFault"
 
 
 /**
- * 刷新整个view的方法 所有的cell都会被重置
+ * 刷新整个view的方法 所有的cell都会被重置,block是刷新完回调
  */
--(void)refreshView;
+-(void)refreshViewWithCallBack:(void (^)(void)) block;
 
 
 /**
- * 设置pageindex对应的page显示到中间去
+ * 设置pageindex对应的page显示到中间去 animated 是否需要动画
  */
--(void)scollToItemWithPageIndex:(NSInteger)pageIndex;
+-(void)scollToItemWithPageIndex:(NSInteger)pageIndex animated:(BOOL) animated;
 
 @end

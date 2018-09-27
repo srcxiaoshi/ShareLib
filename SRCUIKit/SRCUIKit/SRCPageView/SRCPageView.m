@@ -101,17 +101,26 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 
 #pragma mark -public
--(void)refreshView
+-(void)refreshViewWithCallBack:(void (^)(void)) block
 {
-    [self.collectionView reloadData];
+    __weak typeof(self) weakself=self;
+    [self.collectionView performBatchUpdates:^{
+        __strong typeof(weakself) strongself=weakself;
+        [strongself.collectionView reloadSections:[NSIndexSet indexSetWithIndex:0]];
+    } completion:^(BOOL finished) {
+        if(block)
+        {
+            block();
+        }
+    }];
 }
 
--(void)scollToItemWithPageIndex:(NSInteger)pageIndex
+-(void)scollToItemWithPageIndex:(NSInteger)pageIndex animated:(BOOL) animated
 {
     if(self.count>pageIndex)
     {
         NSIndexPath *indexPath=[NSIndexPath indexPathForRow:pageIndex inSection:0];
-        [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+        [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:animated];
     }
     else
     {

@@ -46,6 +46,8 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
         self.collectionView.dataSource=self;
         self.collectionView.delegate=self;
         self.collectionView.showsHorizontalScrollIndicator=NO;
+        self.collectionView.pagingEnabled=YES;
+        
         [self addSubview:self.collectionView];
         //注册
         [self.collectionView registerClass:[SRCPageViewCell class] forCellWithReuseIdentifier:SRCPageViewCellDefaultID];
@@ -57,6 +59,12 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 
 #pragma mark datasource
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize size=collectionView.frame.size;
+    return size;
+}
+
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if(self.delegate && [[self delegate] respondsToSelector:@selector(SRCPageViewNumberOfItems:)])
     {

@@ -444,9 +444,9 @@
 		3CCAF2F0213FC6D6003714DE /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				3CBE27672148ECE70028F1FA /* Setting */,
-				3C1EC100214669F300815BC1 /* ServerTimestamp */,
 				3C07D1EA2142795D00088242 /* AFNetworking */,
+				3C1EC100214669F300815BC1 /* ServerTimestamp */,
+				3CBE27672148ECE70028F1FA /* Setting */,
 				3C07D1F821427C2700088242 /* SRCNetworkWithAF.h */,
 				3C07D1F921427C2700088242 /* SRCNetworkWithAF.m */,
 			);
@@ -608,7 +608,7 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh ../Script/build_fw.sh";
+			shellPath = "/bin/sh ../Script/build_SRCFoundation.sh";
 			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */

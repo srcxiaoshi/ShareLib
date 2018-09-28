@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3C07A450215DFD04000E7C6E /* SRCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C07A44F215DFD04000E7C6E /* SRCFoundation.framework */; };
 		3C24E9C7214BF3E60026B141 /* SRCNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C24E9C5214BF3E60026B141 /* SRCNavViewController.m */; };
 		3C24E9C8214BF3E60026B141 /* SRCNavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C24E9C6214BF3E60026B141 /* SRCNavViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C2EC72E214CCE8500E38C7C /* Error.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2EC72D214CCE8500E38C7C /* Error.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +38,8 @@
 		3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7EC8582147A9C5004D45E8 /* SRCUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02C214B415A00E16A12 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C82A02A214B415A00E16A12 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82A02D214B415A00E16A12 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82A02B214B415A00E16A12 /* UIImage+Color.m */; };
+		3C83374C215CCC34002EECAF /* SRCImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C83374A215CCC34002EECAF /* SRCImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C83374D215CCC34002EECAF /* SRCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C83374B215CCC34002EECAF /* SRCImageView.m */; };
 		3CA3C0392150E1A800154073 /* UIColor+Easy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3C0372150E1A800154073 /* UIColor+Easy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CA3C03A2150E1A800154073 /* UIColor+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3C0382150E1A800154073 /* UIColor+Easy.m */; };
 		3CA3C04F2150E81900154073 /* SRCMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA3C04D2150E81900154073 /* SRCMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C07A44F215DFD04000E7C6E /* SRCFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SRCFoundation.framework; sourceTree = "<group>"; };
 		3C24E9C5214BF3E60026B141 /* SRCNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCNavViewController.m; sourceTree = "<group>"; };
 		3C24E9C6214BF3E60026B141 /* SRCNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCNavViewController.h; sourceTree = "<group>"; };
 		3C2EC72D214CCE8500E38C7C /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		3C7EC8592147A9C5004D45E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C82A02A214B415A00E16A12 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		3C82A02B214B415A00E16A12 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		3C83374A215CCC34002EECAF /* SRCImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCImageView.h; sourceTree = "<group>"; };
+		3C83374B215CCC34002EECAF /* SRCImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCImageView.m; sourceTree = "<group>"; };
 		3CA3C0372150E1A800154073 /* UIColor+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Easy.h"; sourceTree = "<group>"; };
 		3CA3C0382150E1A800154073 /* UIColor+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Easy.m"; sourceTree = "<group>"; };
 		3CA3C04D2150E81900154073 /* SRCMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCMenuView.h; sourceTree = "<group>"; };
@@ -85,12 +91,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C07A450215DFD04000E7C6E /* SRCFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C07A43F215DC5D7000E7C6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C07A44E215DFCEB000E7C6E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3C07A44F215DFD04000E7C6E /* SRCFoundation.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		3C24E9C4214BF3E60026B141 /* SRCNavgationViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +181,7 @@
 			children = (
 				3C7EC8572147A9C5004D45E8 /* SRCUIKit */,
 				3C7EC8562147A9C5004D45E8 /* Products */,
+				3C07A43F215DC5D7000E7C6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +196,8 @@
 		3C7EC8572147A9C5004D45E8 /* SRCUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3C07A44E215DFCEB000E7C6E /* Framework */,
+				3C83363C215CB99B002EECAF /* UIImageView */,
 				3C309146215B63ED00D65BA6 /* SRCTabelView */,
 				3CA5854B2154EDC400066AFE /* SRCPageView */,
 				3CA3C0362150E1A800154073 /* UIColor */,
@@ -196,6 +221,23 @@
 				3C82A02B214B415A00E16A12 /* UIImage+Color.m */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		3C83363C215CB99B002EECAF /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3C833708215CBFE3002EECAF /* SRCWebImageView */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		3C833708215CBFE3002EECAF /* SRCWebImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3C83374A215CCC34002EECAF /* SRCImageView.h */,
+				3C83374B215CCC34002EECAF /* SRCImageView.m */,
+			);
+			path = SRCWebImageView;
 			sourceTree = "<group>";
 		};
 		3CA3C0362150E1A800154073 /* UIColor */ = {
@@ -236,6 +278,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C83374C215CCC34002EECAF /* SRCImageView.h in Headers */,
 				3C7EC85A2147A9C5004D45E8 /* SRCUIKit.h in Headers */,
 				3C2EC789214D0B7C00E38C7C /* SRCDeviceInfo.h in Headers */,
 				3C24E9C8214BF3E60026B141 /* SRCNavViewController.h in Headers */,
@@ -331,7 +374,7 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh ../Script/build_fw.sh";
+			shellPath = "/bin/sh ../Script/build_SRCUIKit.sh";
 			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -341,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C83374D215CCC34002EECAF /* SRCImageView.m in Sources */,
 				3C30914A215B640000D65BA6 /* SRCTableView.m in Sources */,
 				3CA3C0502150E81900154073 /* SRCMenuView.m in Sources */,
 				3CA3C03A2150E1A800154073 /* UIColor+Easy.m in Sources */,
@@ -398,6 +442,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Framework";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -418,6 +463,7 @@
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -464,6 +510,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Framework";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -477,6 +524,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -493,6 +541,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SRCUIKit/Framework";
 				INFOPLIST_FILE = SRCUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,6 +566,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SRCUIKit/Framework";
 				INFOPLIST_FILE = SRCUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -28,9 +28,8 @@
         self.tableView.delegate=self;
         self.tableView.dataSource=self;
         [self addSubview:self.tableView];
-        
         //注册默认 cell样式
-        [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:defaultCellID];
+        [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:SRCTableViewCellDefaultID];
     }
     return self;
 }
@@ -40,7 +39,7 @@
 {
     if(self.delegate&&[self.delegate respondsToSelector:@selector(SRCTableView:numberOfRowsInSection:)])
     {
-        return [self.delegate numberOfSectionsInSRCTableView:self];
+        return [self.delegate numberOfSectionsInSRCTableView:self.tableView];
     }
     else
     {
@@ -52,7 +51,7 @@
 {
     if(self.delegate && [self.delegate respondsToSelector:@selector(SRCTableView:numberOfRowsInSection:)])
     {
-        return [self.delegate SRCTableView:self numberOfRowsInSection:section];
+        return [self.delegate SRCTableView:self.tableView numberOfRowsInSection:section];
     }
     else
     {
@@ -64,11 +63,11 @@
 {
     if(self.delegate && [self.delegate respondsToSelector:@selector(SRCTableView:cellForRowAtIndexPath:)])
     {
-        return [self.delegate SRCTableView:self cellForRowAtIndexPath:indexPath];
+        return [self.delegate SRCTableView:self.tableView cellForRowAtIndexPath:indexPath];
     }
     else
     {
-        return [tableView dequeueReusableCellWithIdentifier:defaultCellID];
+        return [tableView dequeueReusableCellWithIdentifier:SRCTableViewCellDefaultID];
     }
 }
 
@@ -76,7 +75,7 @@
 {
     if(self.delegate && [self.delegate respondsToSelector:@selector(SRCTableView:didSelectRowAtIndexPath:)])
     {
-        [self.delegate SRCTableView:self didSelectRowAtIndexPath:indexPath];
+        [self.delegate SRCTableView:self.tableView didSelectRowAtIndexPath:indexPath];
     }
 
 }

@@ -483,6 +483,86 @@ static SRCNetworkWithAF *instance = nil;//单例对象
 }
 
 
+/**
+ *  图片下载，返回的是task
+ *
+ */
++(NSURLSessionTask *)downloadFileWithURL:(NSURL *)url prograss:(void(^) (float prograss))prograssBlock completion:(void(^)(NSURL *filepath))completionBlock
+{
+    if(!url)
+    {
+        ERROR();
+        return nil;
+    }
+    NSURLRequest * request=[NSURLRequest requestWithURL:url];
+
+    /**
+     * 第一个参数 - request：请求对象
+     * 第二个参数 - progress：下载进度block
+     *      其中： downloadProgress.completedUnitCount：已经完成的大小
+     *            downloadProgress.totalUnitCount：文件的总大小
+     * 第三个参数 - destination：自动完成文件剪切操作
+     *      其中： 返回值:该文件应该被剪切到哪里
+     *            targetPath：临时路径 tmp NSURL
+     *            response：响应头
+     * 第四个参数 - completionHandler：下载完成回调
+     *      其中： filePath：真实路径 == 第三个参数的返回值
+     *            error:错误信息
+     */
+
+    NSURLSessionTask *downlaodTask=[[[self shareNetWorkingUtility] manager] downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+        if(prograssBlock)
+        {
+            CGFloat value=[downloadProgress fractionCompleted];
+            prograssBlock(value);
+        }
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        //下载完以后，文件放置的全路径  返回的路径就是 comple以后的filepath
+        NSString *fullpath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:response.suggestedFilename];
+        NSURL *fileUrl = [NSURL fileURLWithPath:fullpath];
+        return fileUrl;
+
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        if(error)
+        {
+            if(completionBlock)
+            {
+                completionBlock(nil);
+            }
+            return ;
+        }
+        if(completionBlock)
+        {
+            completionBlock(filePath);
+        }
+    }];
+
+    //3.执行Task
+    [downlaodTask resume];
+
+    return downlaodTask;
+}
+
+/**
+ *  取消对应的任务
+ *
+ */
++(void)cancelTask:(NSURLSessionTask *)task
+{
+    if(!task)
+    {
+        ERROR();
+        return;
+    }
+    NSArray *arr=[[[self shareNetWorkingUtility] manager] downloadTasks];
+    if(arr&&[arr count]>0)
+    {
+        if([arr containsObject:task])
+        {
+            [task cancel];
+        }
+    }
+}
 
 
 

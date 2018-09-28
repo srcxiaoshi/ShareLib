@@ -83,7 +83,22 @@
 
 
 
-
+-(NSString *)URL_fileNameFromURLString
+{
+    if([self length]>0)
+    {
+        NSString *str=[self lastPathComponent];
+        if([NSString safe_isEmpty:str])
+        {
+            return nil;
+        }
+        else
+        {
+            return str;
+        }
+    }
+    return nil;
+}
 
 
 

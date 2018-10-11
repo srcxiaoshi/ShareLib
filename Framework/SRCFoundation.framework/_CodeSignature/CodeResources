@@ -12,6 +12,10 @@
 		<data>
 		QE7dAyz+VPwaxx5cpezIxpgSsO0=
 		</data>
+		<key>Headers/Dispatch_safe.h</key>
+		<data>
+		tqZbhnyhCn5ZpBgKLwEdLPErjKA=
+		</data>
 		<key>Headers/ErrorHome.h</key>
 		<data>
 		evdGpc28DScCdHcyMpsYmyCgLf4=
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/NSString+Safe.h</key>
 		<data>
-		2JL7qtTtoNkjg1p1k00naEJyZ/o=
+		1NYpWP2A3ocNRC+CiypN3vJNr9E=
 		</data>
 		<key>Headers/NSString+URL.h</key>
 		<data>
@@ -82,7 +86,11 @@
 		</data>
 		<key>Headers/SRCFoundation.h</key>
 		<data>
-		/aQEhqIB7NhT75Xo7cT56aby98g=
+		ugjCm07C797GQJs7+qm6taeDmXE=
+		</data>
+		<key>Headers/SRCImageModel.h</key>
+		<data>
+		HmvziIw1Y5ceSoSKgScRS59ex98=
 		</data>
 		<key>Headers/SRCNetworkWithAF.h</key>
 		<data>
@@ -102,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		o0ViXnP8kZGThGq5BOBX3VMrkzo=
+		nYNCP99+4I/L4kinvBf1wBksipg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,6 +139,17 @@
 			<key>hash2</key>
 			<data>
 			Aji0olgyzTmOa+rfE37sXPvFug0ogJMERy9VF9PdE2U=
+			</data>
+		</dict>
+		<key>Headers/Dispatch_safe.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tqZbhnyhCn5ZpBgKLwEdLPErjKA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ICVVpWX41CxhqtgYX/EvzPMeoPQyIlpXujRh3oyJWEQ=
 			</data>
 		</dict>
 		<key>Headers/ErrorHome.h</key>
@@ -291,11 +310,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2JL7qtTtoNkjg1p1k00naEJyZ/o=
+			1NYpWP2A3ocNRC+CiypN3vJNr9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			L0zv2KObsOmGf+PrTvjwfeYViurl5VggilTHKOI8eVQ=
+			pGtr9WYCAjUMppCh31y6N6Sb++rYmbsZE0skKR8qmTQ=
 			</data>
 		</dict>
 		<key>Headers/NSString+URL.h</key>
@@ -324,11 +343,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/aQEhqIB7NhT75Xo7cT56aby98g=
+			ugjCm07C797GQJs7+qm6taeDmXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			k++kGiLt9FFWrquxGDndQOMvujZx+3PLdkBqVzW1j24=
+			lG0U0Eoqewxw3AYUAckZnFam9Fy8z2XzJy7gVtIJz5s=
+			</data>
+		</dict>
+		<key>Headers/SRCImageModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HmvziIw1Y5ceSoSKgScRS59ex98=
+			</data>
+			<key>hash2</key>
+			<data>
+			yYNPceZvPxJpM+rSxry7a3APpD11xjraYGF3SXaTl6Q=
 			</data>
 		</dict>
 		<key>Headers/SRCNetworkWithAF.h</key>
@@ -389,7 +419,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -420,24 +450,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -473,13 +491,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

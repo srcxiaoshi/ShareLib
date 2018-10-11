@@ -24,10 +24,15 @@ FOUNDATION_EXPORT const unsigned char SRCUIKitVersionString[];
 
 //UIImage
 #import <SRCUIKit/UIImage+Color.h>
+#import <SRCUIKit/UIImage+WebP.h>
+#import <SRCUIKit/UIImage+Type.h>
 
 //UIImageView.
 #import <SRCUIKit/SRCImageView.h>
 
+//UILabel
+#import <SRCUIKit/SRCUILabel+Easy.h>
+#import <SRCUIKit/SRCUILabel.h>
 
 
 //Navigationbar with search and image=camera
@@ -52,6 +57,7 @@ FOUNDATION_EXPORT const unsigned char SRCUIKitVersionString[];
 
 //tableview
 #import <SRCUIKit/SRCTableView.h>
+#import <SRCUIKit/SRCBaseTableViewCell.h>
 
 
 

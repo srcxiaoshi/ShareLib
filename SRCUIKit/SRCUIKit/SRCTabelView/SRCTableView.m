@@ -24,7 +24,9 @@
     self=[super initWithFrame:frame];
     if(self)
     {
-        self.tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        self.tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height) style:UITableViewStylePlain];
+        self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+        self.tableView.showsVerticalScrollIndicator=NO;
         self.tableView.delegate=self;
         self.tableView.dataSource=self;
         [self addSubview:self.tableView];
@@ -80,5 +82,31 @@
 
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(self.delegate && [self.delegate respondsToSelector:@selector(SRCTableView:heightForRowAtIndexPath:)])
+    {
+        return [self.delegate SRCTableView:self.tableView heightForRowAtIndexPath:indexPath];
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+
+
+#pragma mark public
+-(void)reloadData
+{
+    [self.tableView reloadData];
+}
+
+-(void)dealloc
+{
+    self.tableView.delegate=nil;
+    self.tableView.dataSource=nil;
+    self.tableView=nil;
+}
 
 @end

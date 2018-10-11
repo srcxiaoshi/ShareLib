@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3C07A464215E24A4000E7C6E /* Dispatch_safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C07A463215E2393000E7C6E /* Dispatch_safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C07D1FA21427C2700088242 /* SRCNetworkWithAF.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C07D1F821427C2700088242 /* SRCNetworkWithAF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C07D1FB21427C2700088242 /* SRCNetworkWithAF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C07D1F921427C2700088242 /* SRCNetworkWithAF.m */; };
 		3C07D1FC21427C6F00088242 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C07D1F02142795D00088242 /* AFHTTPSessionManager.m */; };
@@ -74,6 +75,8 @@
 		3C77A0872140C5AB000D6EAD /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C77A0852140C5AB000D6EAD /* NSObject+Safe.m */; };
 		3C7EC84321475F5A004D45E8 /* AppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7EC84121475F5A004D45E8 /* AppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C7EC84421475F5A004D45E8 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EC84221475F5A004D45E8 /* AppInfo.m */; };
+		3C8106F22160A82A00BA1D81 /* SRCImageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C8106F02160A82A00BA1D81 /* SRCImageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C8106F32160A82A00BA1D81 /* SRCImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8106F12160A82A00BA1D81 /* SRCImageModel.m */; };
 		3CB1D7132138E6A500488B2C /* NSMutableDictionary+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB1D7112138E6A500488B2C /* NSMutableDictionary+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CB1D7142138E6A500488B2C /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1D7122138E6A500488B2C /* NSMutableDictionary+Safe.m */; };
 		3CB1D718213917A500488B2C /* NSString+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB1D716213917A500488B2C /* NSString+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -99,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C07A463215E2393000E7C6E /* Dispatch_safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dispatch_safe.h; sourceTree = "<group>"; };
 		3C07D1EB2142795D00088242 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
 		3C07D1EC2142795D00088242 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		3C07D1ED2142795D00088242 /* AFURLSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 		3C77A0852140C5AB000D6EAD /* NSObject+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
 		3C7EC84121475F5A004D45E8 /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		3C7EC84221475F5A004D45E8 /* AppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		3C8106F02160A82A00BA1D81 /* SRCImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCImageModel.h; sourceTree = "<group>"; };
+		3C8106F12160A82A00BA1D81 /* SRCImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCImageModel.m; sourceTree = "<group>"; };
 		3CB1D7112138E6A500488B2C /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		3CB1D7122138E6A500488B2C /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
 		3CB1D716213917A500488B2C /* NSString+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Safe.h"; sourceTree = "<group>"; };
@@ -196,6 +202,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C07A462215E21B4000E7C6E /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				3C07A463215E2393000E7C6E /* Dispatch_safe.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		3C07D1EA2142795D00088242 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +236,8 @@
 				3C1EC0CC21460E3F00815BC1 /* BaseModel.h */,
 				3C1EC0CB21460E3E00815BC1 /* BaseModel.m */,
 				3C1EC08F214600FA00815BC1 /* JSONModel */,
+				3C8106F02160A82A00BA1D81 /* SRCImageModel.h */,
+				3C8106F12160A82A00BA1D81 /* SRCImageModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -330,6 +346,7 @@
 		3C5631492137D5AC0069FEF4 /* SRCFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				3C07A462215E21B4000E7C6E /* GCD */,
 				3C2EC717214CB8A700E38C7C /* NSSet */,
 				3C2EC718214CB8A700E38C7C /* Print */,
 				3C7EC84021475F0A004D45E8 /* App */,
@@ -492,6 +509,8 @@
 				3C1EC10321466A9500815BC1 /* ServerTimestamp.h in Headers */,
 				3C1EC0F421465B8A00815BC1 /* UIDevice+Software.h in Headers */,
 				3C7EC84321475F5A004D45E8 /* AppInfo.h in Headers */,
+				3C07A464215E24A4000E7C6E /* Dispatch_safe.h in Headers */,
+				3C8106F22160A82A00BA1D81 /* SRCImageModel.h in Headers */,
 				3CBE276A2148ED250028F1FA /* Setting.h in Headers */,
 				3C1EC0A8214600FA00815BC1 /* JSONValueTransformer.h in Headers */,
 				3C1EC0B4214600FA00815BC1 /* JSONModel+networking.h in Headers */,
@@ -630,6 +649,7 @@
 				3CB1D719213917A500488B2C /* NSString+Safe.m in Sources */,
 				3C77A07E2140A93E000D6EAD /* NSOperationQueue+Safe.m in Sources */,
 				3C1EC0CD21460E3F00815BC1 /* BaseModel.m in Sources */,
+				3C8106F32160A82A00BA1D81 /* SRCImageModel.m in Sources */,
 				3C77A0832140B8CB000D6EAD /* NSFileManager+Safe.m in Sources */,
 				3CCAF2F5213FC83C003714DE /* NSTimer+Safe.m in Sources */,
 				3C77A0872140C5AB000D6EAD /* NSObject+Safe.m in Sources */,
@@ -677,11 +697,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -735,7 +751,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -747,11 +763,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

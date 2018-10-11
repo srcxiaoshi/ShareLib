@@ -49,8 +49,8 @@
 -(void)prepareLayout
 {
     self.scrollDirection=UICollectionViewScrollDirectionHorizontal;//水平
-    self.minimumInteritemSpacing=0.0000001;//左右边缘距离
-
+    self.minimumInteritemSpacing=0;//左右行边缘距离
+    self.minimumLineSpacing=0;//上下行边缘
     CGFloat width=self.collectionView.frame.size.width;
     CGFloat height=self.collectionView.frame.size.height;
     self.itemSize=CGSizeMake(width, height);//cell 的大小

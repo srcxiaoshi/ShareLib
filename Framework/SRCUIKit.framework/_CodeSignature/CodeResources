@@ -8,6 +8,10 @@
 		<data>
 		lHk2j90y4UXd9OB4T/sMZ/RIfLw=
 		</data>
+		<key>Headers/SRCBaseTableViewCell.h</key>
+		<data>
+		GKTRqUMKDCiF0YJh0kFnk9cd0Lk=
+		</data>
 		<key>Headers/SRCDeviceInfo.h</key>
 		<data>
 		YtN6SkvYL9aRrb/G4LRjPNDrZ6E=
@@ -46,7 +50,7 @@
 		</data>
 		<key>Headers/SRCTableView.h</key>
 		<data>
-		EvHMdRA7O0FRdfnzMfwNleXfWjs=
+		GNmmjuYwzO9fFFFq0ldqRKUDcBg=
 		</data>
 		<key>Headers/SRCTextFieldWithSearch.h</key>
 		<data>
@@ -54,7 +58,15 @@
 		</data>
 		<key>Headers/SRCUIKit.h</key>
 		<data>
-		6fuYMMig72ASSvDxwOpg2tEUF6U=
+		0sCHPlK1rxwJDWXZo6mIV2mv+Z8=
+		</data>
+		<key>Headers/SRCUILabel+Easy.h</key>
+		<data>
+		RCVmGdENjERdnkSdefaIcvhILAk=
+		</data>
+		<key>Headers/SRCUILabel.h</key>
+		<data>
+		hNH0cWHn06dTUbwaz2HaKP8wWR0=
 		</data>
 		<key>Headers/UIColor+Easy.h</key>
 		<data>
@@ -64,13 +76,41 @@
 		<data>
 		5f5WdTIiE0syETU9W7E2/iGjAlM=
 		</data>
+		<key>Headers/UIImage+Type.h</key>
+		<data>
+		nS88ufkZk9EHDuPTvPa7dfextYQ=
+		</data>
+		<key>Headers/UIImage+WebP.h</key>
+		<data>
+		mlSvFQhzIMobqlE06w+zC4m10ZU=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		WfFdI71mT/X+tqX5oSLiV18DwKI=
+		6kJaBAddDT/AWewc1RoC9Jq+tZI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		H9zAQDa8Arz/SJopw/x+/Jh9kKo=
+		</data>
+		<key>config.h.in</key>
+		<data>
+		owDTO+iTPDDhLrjx54JkZJgTiM0=
+		</data>
+		<key>libwebpdemux.pc.in</key>
+		<data>
+		QDYEHKOAUaRAaADVvrjP4YMwVA0=
+		</data>
+		<key>libwebpdemux.rc</key>
+		<data>
+		bLRzJAjrqsJMvsubgw/3D3AD4Q4=
+		</data>
+		<key>libwebpmux.pc.in</key>
+		<data>
+		EKQAvJKAsDRuJoplXYii25HCRxM=
+		</data>
+		<key>libwebpmux.rc</key>
+		<data>
+		D9nDmf3V94RzFgEmIYrRGNe9Txw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -84,6 +124,17 @@
 			<key>hash2</key>
 			<data>
 			ZWfJ2ZP8HPp6KgnUMRUXX5R6DuuSep7OSbGX86JxiKM=
+			</data>
+		</dict>
+		<key>Headers/SRCBaseTableViewCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GKTRqUMKDCiF0YJh0kFnk9cd0Lk=
+			</data>
+			<key>hash2</key>
+			<data>
+			dez7qBTONVbgI0PnUfdQrHYYjqaqYhMDfIZKeRnmeQA=
 			</data>
 		</dict>
 		<key>Headers/SRCDeviceInfo.h</key>
@@ -189,11 +240,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EvHMdRA7O0FRdfnzMfwNleXfWjs=
+			GNmmjuYwzO9fFFFq0ldqRKUDcBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9UC+NFF35M3HUv0SSdX0BsVNXY2dAYCfOdJxNUKnMgo=
+			BPuQ8ID+8dRo4oAC5Qq/qfS4KLbPT78mGjHFe/YJUB0=
 			</data>
 		</dict>
 		<key>Headers/SRCTextFieldWithSearch.h</key>
@@ -211,11 +262,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6fuYMMig72ASSvDxwOpg2tEUF6U=
+			0sCHPlK1rxwJDWXZo6mIV2mv+Z8=
 			</data>
 			<key>hash2</key>
 			<data>
-			yAlE7zvEGtyMaTcI4PQ0DUyDFHanLv3t/5PQrpi+OEA=
+			1c1EKCa10j3w1JOt7C9UOy5ug5kW1HwEsM5keP/cLE0=
+			</data>
+		</dict>
+		<key>Headers/SRCUILabel+Easy.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RCVmGdENjERdnkSdefaIcvhILAk=
+			</data>
+			<key>hash2</key>
+			<data>
+			sTGjtpe6ol2gxEV3enzGDzWiAgjRw9DoIhafIpKJvB4=
+			</data>
+		</dict>
+		<key>Headers/SRCUILabel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hNH0cWHn06dTUbwaz2HaKP8wWR0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ws/PEgC5wBLiEMUQlfDB5dg70qS49p6xMJCfARskv7M=
 			</data>
 		</dict>
 		<key>Headers/UIColor+Easy.h</key>
@@ -240,6 +313,28 @@
 			lg73ZhPmwKMlZSt/2x+3XxebyyNDtdWKaywVOShPvMQ=
 			</data>
 		</dict>
+		<key>Headers/UIImage+Type.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nS88ufkZk9EHDuPTvPa7dfextYQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			gMiolfLonD7bpXOcDva3ijdtmp8RGDbd6YNb1mvZk1g=
+			</data>
+		</dict>
+		<key>Headers/UIImage+WebP.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mlSvFQhzIMobqlE06w+zC4m10ZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			rGvXWA6D2MdlH7CKjg+9Il/gq+HW6/4Afk+nOaI94v8=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
@@ -251,10 +346,65 @@
 			n1cgXgVDcNu3hMc0R/ahyHHsgNusG+xFN6eEfrvMCNM=
 			</data>
 		</dict>
+		<key>config.h.in</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			owDTO+iTPDDhLrjx54JkZJgTiM0=
+			</data>
+			<key>hash2</key>
+			<data>
+			BaOlK4lsitsG6oCDJRr2DeOO8MCKEvmTF+4peXJnaZk=
+			</data>
+		</dict>
+		<key>libwebpdemux.pc.in</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QDYEHKOAUaRAaADVvrjP4YMwVA0=
+			</data>
+			<key>hash2</key>
+			<data>
+			1pRVU3iHPIHT+tllvQTuWOa9MVLXYJTtm5xL3yYhQkQ=
+			</data>
+		</dict>
+		<key>libwebpdemux.rc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bLRzJAjrqsJMvsubgw/3D3AD4Q4=
+			</data>
+			<key>hash2</key>
+			<data>
+			8m84LEOcTDg1sT/fBHvdV3SkEGx37adcTtEUN1rmDmc=
+			</data>
+		</dict>
+		<key>libwebpmux.pc.in</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EKQAvJKAsDRuJoplXYii25HCRxM=
+			</data>
+			<key>hash2</key>
+			<data>
+			NmE0Bpp9JX4yaN+nIdtvJz9l9DLUgfRJ2+2Ft2s4MIw=
+			</data>
+		</dict>
+		<key>libwebpmux.rc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D9nDmf3V94RzFgEmIYrRGNe9Txw=
+			</data>
+			<key>hash2</key>
+			<data>
+			qaUr1Pq7H0oeiAOr+ZeN75CmUihupVb4tVcfKSlJPC4=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -285,24 +435,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -338,13 +476,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

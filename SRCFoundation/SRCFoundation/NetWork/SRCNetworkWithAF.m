@@ -517,9 +517,13 @@ static SRCNetworkWithAF *instance = nil;//单例对象
             prograssBlock(value);
         }
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        //下载完以后，文件放置的全路径  返回的路径就是 comple以后的filepath
-        NSString *fullpath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:response.suggestedFilename];
-        NSURL *fileUrl = [NSURL fileURLWithPath:fullpath];
+        //临时文件
+        //下载完以后，文件放置的全路径  返回的路径就是 comple以后的filepath 问题出在路径上
+        //NSString *fullpath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:temp];
+
+        NSString *temp = NSTemporaryDirectory();
+        temp=[temp safe_stringByAppendingString:[[url absoluteString] URL_fileNameFromURLString]];
+        NSURL *fileUrl = [NSURL fileURLWithPath:temp];
         return fileUrl;
 
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
@@ -531,6 +535,7 @@ static SRCNetworkWithAF *instance = nil;//单例对象
             }
             return ;
         }
+
         if(completionBlock)
         {
             completionBlock(filePath);

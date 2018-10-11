@@ -21,18 +21,25 @@
 //判空 传入的是nil NULL null 非nsstring "(null)" " \n" 如有新的形式，再补充
 +(BOOL)safe_isEmpty:(NSString *)str
 {
+    return ![self safe_isNotEmpty:str];
+    
+}
+
+//判空 传入的是nil NULL null 非nsstring "(null)" " \n" 如有新的形式，再补充
++(BOOL)safe_isNotEmpty:(NSString *)str
+{
     if(
        str
-       &&[str isEqual:[NSNull null]]
+       &&![str isEqual:[NSNull null]]
        &&[str isKindOfClass:[NSString class]]
-       &&[str isEqualToString:@"(null)"]
+       &&![str isEqualToString:@"(null)"]
        &&[[str safe_trim] length]>0
        )
     {
         return YES;
     }
     return NO;
-    
+
 }
 
 -(NSString *)safe_substringToIndex:(NSUInteger)to

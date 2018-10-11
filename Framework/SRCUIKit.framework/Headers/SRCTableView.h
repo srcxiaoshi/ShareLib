@@ -41,11 +41,17 @@ static NSString * const SRCTableViewCellDefaultID=@"SRCTableViewCellDefaultID";
  */
 - (void)SRCTableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
+/**
+ * cell高度
+ */
+-(CGFloat)SRCTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+
 @end
 
 @interface SRCTableView : UIView
 
 @property(nonatomic,weak)id<SRCTableViewDelegate> delegate;
 
-
+-(void)reloadData;
 @end

@@ -49,6 +49,7 @@ FOUNDATION_EXPORT const unsigned char SRCFoundationVersionString[];
 //Model object JsonModel
 #import <SRCFoundation/JSONModel.h>
 #import <SRCFoundation/BaseModel.h>
+#import <SRCFoundation/SRCImageModel.h>
 
 //ERROR
 #import <SRCFoundation/ErrorHome.h>
@@ -60,7 +61,8 @@ FOUNDATION_EXPORT const unsigned char SRCFoundationVersionString[];
 #import <SRCFoundation/UIDevice+Hardware.h>
 #import <SRCFoundation/UIDevice+Software.h>
 
-
+//GCD
+#import <SRCFoundation/Dispatch_safe.h>
 
 
 

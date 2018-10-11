@@ -14,6 +14,8 @@
 
 +(BOOL)safe_isEmpty:(NSString *)str;
 
++(BOOL)safe_isNotEmpty:(NSString *)str;
+
 -(NSString *)safe_substringFromIndex:(NSUInteger)from;
 
 -(NSString *)safe_substringToIndex:(NSUInteger)to;
